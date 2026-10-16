@@ -1,0 +1,23 @@
+﻿country_code,country_name,country_iso2,country_iso3,issue
+56,Belgium,BE,BEL,duplicate_iso3
+58,Belgium-Luxembourg (...1998),BE,BEL,duplicate_iso3
+276,Germany,DE,DEU,duplicate_iso3
+280,Fed. Rep. of Germany (...1990),DE,DEU,duplicate_iso3
+729,Sudan,SD,SDN,duplicate_iso3
+736,Sudan (...2011),SD,SDN,duplicate_iso3
+490,"Other Asia, nes",,S19,blank_iso2
+516,Namibia,,NAM,blank_iso2
+697,"Europe EFTA, nes",,R20,blank_iso2
+711,Southern African Customs Union (...1999),,ZA1,blank_iso2
+490,"Other Asia, nes",,S19,nonstandard_iso3
+697,"Europe EFTA, nes",,R20,nonstandard_iso3
+711,Southern African Customs Union (...1999),,ZA1,nonstandard_iso3
+58,Belgium-Luxembourg (...1998),BE,BEL,historical_entity
+200,Czechoslovakia (...1992),CS,CSK,historical_entity
+278,Dem. Rep. of Germany (...1990),DD,DDR,historical_entity
+280,Fed. Rep. of Germany (...1990),DE,DEU,historical_entity
+530,Netherlands Antilles (...2010),AN,ANT,historical_entity
+711,Southern African Customs Union (...1999),,ZA1,historical_entity
+736,Sudan (...2011),SD,SDN,historical_entity
+810,USSR (...1990),SU,SUN,historical_entity
+891,Serbia and Montenegro (...2005),CS,SCG,historical_entity

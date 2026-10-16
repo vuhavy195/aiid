@@ -1,0 +1,66 @@
+==============================================================================================
+AIID DTA–GPR PROJECT — STEP 8 ESTIMATION PANELS
+==============================================================================================
+Project root: H:\AIID_DTA_GPR
+
+A. INPUT VALIDATION
+----------------------------------------------------------------------------------------------
+Positive intermediate pair–HS2–year rows: 8,792,803
+Positive intermediate pair–year rows: 333,028
+DTA directed pair–year rows: 432,480
+GPR years merged: 17
+
+B. COMPLETE PAIR–YEAR PANEL
+----------------------------------------------------------------------------------------------
+Rows: 432,480
+Structural-zero rows: 99,452 (22.995745%)
+Rows unavailable for the lagged-depth baseline: 26
+
+C. PAIR–HS2–YEAR PPML SUPPORT PANEL
+----------------------------------------------------------------------------------------------
+Unique supported pair–HS2 groups: 985,562
+Distinct intermediate HS2 chapters: 88
+Rows after adding all within-support zero years: 16,754,554
+Structural-zero rows: 7,961,751 (47.519922%)
+Rows unavailable for the lagged-depth baseline: 2,093
+All pair–HS2 groups are positive in at least one year: True
+
+D. INTERMEDIATE–CONSUMPTION DDD PANEL
+----------------------------------------------------------------------------------------------
+Rows: 864,960
+Structural-zero rows: 206,127 (23.830813%)
+
+E. BASELINE VARIABLES
+----------------------------------------------------------------------------------------------
+Main treatment scale: depth_strict_l1_10 (10 legally enforceable policy areas)
+Main shock: gpr_mean_z (one historical standard deviation)
+Main interaction: gpr_x_depth_strict_l1_10
+FTA-existence comparison: gpr_x_fta_l1
+Baseline estimation flag: baseline_depth_available
+
+F. FIXED-EFFECT IDENTIFIERS
+----------------------------------------------------------------------------------------------
+directed_pair_id
+pair_hs2_id
+exporter_year_id
+importer_year_id
+hs2_year_id
+pair_enduse_id
+enduse_year_id
+
+G. OUTPUT FILES
+----------------------------------------------------------------------------------------------
+data/processed/estimation_pair_hs2_year_intermediate/  [year-partitioned Parquet dataset]
+data/processed/estimation_pair_year_intermediate.parquet
+data/processed/estimation_pair_enduse_year_ddd.parquet
+outputs/audit/step8_estimation_panel_audit.txt
+outputs/audit/step8_pair_year_annual_summary.csv
+outputs/audit/step8_hs2_support_summary.csv
+outputs/audit/step8_ddd_enduse_summary.csv
+outputs/audit/step8_baseline_missing_depth_pair_years.csv
+
+H. ECONOMETRIC NOTE
+----------------------------------------------------------------------------------------------
+The HS2 panel retains every zero year inside a pair–HS2 group that trades positively at least once.
+Pair–HS2 groups that are zero in all 17 years are omitted because pair–HS2 fixed effects make them separated and non-informative in PPML.
+Do not run the final models until the panel audit has been reviewed and the R pilot script is prepared.

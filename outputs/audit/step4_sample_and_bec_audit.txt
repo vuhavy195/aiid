@@ -1,0 +1,54 @@
+============================================================================================
+AIID DTA–GPR PROJECT — STEP 4 SAMPLE AND BEC AUDIT
+============================================================================================
+Project root: H:\AIID_DTA_GPR
+This step creates the final 160-economy sample and a conservative HS2007–BEC Rev.4 map.
+
+============================================================================================
+A. FINAL COUNTRY/ECONOMY SAMPLE
+============================================================================================
+Eligible economies before top-160 cutoff: 205
+Final sample size: 160
+Share of global BACI exports, 2007–2023: 99.826464%
+Taiwan proxy included: True
+Taiwan proxy rank: 14
+All 10 ASEAN economies included: True
+Lowest-ranked included economy: Guyana (rank 160)
+
+============================================================================================
+B. HS2007 → BEC REV.4 CLEAN MAP
+============================================================================================
+Official mapping rows after cleaning: 5,089
+Unique official HS2007 codes: 5,050
+Cross-end-use ambiguous observed HS6 codes: 32; trade-value share=1.408395%
+Unallocated BEC-category observed HS6 codes: 26; trade-value share=4.011577%
+Observed HS6 codes absent from official correspondence: 1; trade-value share=4.107963%
+Unmapped observed codes:
+  271000 | Petroleum oils and oils from bituminous minerals, not crude: preparations n.e.c. containing by weight 70% or more of petroleum oils or oils from bituminous minerals: these being the basic constituents of the preparations: waste oils | trade-value share=4.107963%
+
+============================================================================================
+C. BASELINE CLASSIFICATION RULE
+============================================================================================
+Keep as intermediate goods only HS6 codes with final_end_use='intermediate'.
+Keep as final-consumption goods only HS6 codes with final_end_use='consumption'.
+Do not assign cross-end-use ambiguous, unallocated, or unmapped codes to either group in the baseline.
+Code 271000 is expected to remain unmapped because it aggregates several detailed HS2007 petroleum subheadings with different BEC treatment.
+A later robustness test will use HS2012 data for 2012–2023 and/or exclude energy products.
+
+============================================================================================
+D. OUTPUT FILES
+============================================================================================
+data/processed/country_sample_160.csv
+data/interim/hs07_bec4_clean_map.csv
+outputs/audit/step4_country_sample_all_codes.csv
+outputs/audit/step4_country_exclusions.csv
+outputs/audit/step4_bec_observed_product_audit.csv
+outputs/audit/step4_bec_mapping_summary.csv
+outputs/audit/step4_bec_problem_codes.csv
+outputs/audit/step4_sample_and_bec_audit.txt
+
+============================================================================================
+E. NEXT ACTION
+============================================================================================
+Send step4_sample_and_bec_audit.txt, country_sample_160.csv, step4_bec_mapping_summary.csv, and step4_bec_problem_codes.csv to ChatGPT.
+Do not build the full intermediate-goods panel until these outputs have been reviewed.

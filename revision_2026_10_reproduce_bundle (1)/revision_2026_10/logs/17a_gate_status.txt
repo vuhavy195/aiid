@@ -1,0 +1,5 @@
+PASS
+N ok: True
+estimates ok: True
+SE ok: True
+singleton rule: one-pass

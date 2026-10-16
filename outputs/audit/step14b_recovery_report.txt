@@ -1,0 +1,61 @@
+============================================================================================================
+AIID DTA–GPR PROJECT — STEP 14B POST-EXIT RECOVERY LPM
+============================================================================================================
+Project root: H:/AIID_DTA_GPR
+
+A. SAMPLE
+------------------------------------------------------------------------------------------------------------
+Exit events: 1,237,520
+One-year follow-up events: 1,152,080
+Two-year follow-up events: 1,065,382
+Mean active-FTA depth: 12.305 provisions
+Median active-FTA depth: 11.000 provisions
+
+B. PRIMARY DIRECTED-PAIR FE INTERACTIONS
+   PAIR + EXIT-YEAR CLUSTERED
+------------------------------------------------------------------------------------------------------------
+full_recovery_1y | gpr_x_depth_strict_l1_10: beta=-0.000869, effect=-0.0869 pp, p=0.434997
+full_recovery_1y | gpr_x_fta_l1: beta=-0.000191, effect=-0.0191 pp, p=0.912115
+full_recovery_within_2y | gpr_x_depth_strict_l1_10: beta=-0.000222, effect=-0.0222 pp, p=0.951421
+full_recovery_within_2y | gpr_x_fta_l1: beta=-0.000732, effect=-0.0732 pp, p=0.901274
+reenter_1y | gpr_x_depth_strict_l1_10: beta=-0.003543, effect=-0.3543 pp, p=0.043787
+reenter_1y | gpr_x_fta_l1: beta=0.001368, effect=0.1368 pp, p=0.569892
+reenter_within_2y | gpr_x_depth_strict_l1_10: beta=0.000097, effect=0.0097 pp, p=0.978301
+reenter_within_2y | gpr_x_fta_l1: beta=0.003489, effect=0.3489 pp, p=0.566782
+
+C. NET GPR INTERACTION BY AGREEMENT DEPTH
+   DIRECTED-PAIR FE, PAIR + EXIT-YEAR CLUSTERED
+------------------------------------------------------------------------------------------------------------
+full_recovery_1y | 0 provisions: effect=-0.0191 pp, p=0.912115
+full_recovery_1y | 10 provisions: effect=-0.1060 pp, p=0.290785
+full_recovery_1y | 20 provisions: effect=-0.1929 pp, p=0.116319
+full_recovery_1y | 30 provisions: effect=-0.2798 pp, p=0.186779
+full_recovery_within_2y | 0 provisions: effect=-0.0732 pp, p=0.901274
+full_recovery_within_2y | 10 provisions: effect=-0.0953 pp, p=0.825490
+full_recovery_within_2y | 20 provisions: effect=-0.1175 pp, p=0.827428
+full_recovery_within_2y | 30 provisions: effect=-0.1397 pp, p=0.863369
+reenter_1y | 0 provisions: effect=0.1368 pp, p=0.569892
+reenter_1y | 10 provisions: effect=-0.2175 pp, p=0.088853
+reenter_1y | 20 provisions: effect=-0.5718 pp, p=0.002473
+reenter_1y | 30 provisions: effect=-0.9262 pp, p=0.006796
+reenter_within_2y | 0 provisions: effect=0.3489 pp, p=0.566782
+reenter_within_2y | 10 provisions: effect=0.3587 pp, p=0.450991
+reenter_within_2y | 20 provisions: effect=0.3684 pp, p=0.526624
+reenter_within_2y | 30 provisions: effect=0.3781 pp, p=0.653002
+
+D. FIXED-EFFECT ROBUSTNESS
+------------------------------------------------------------------------------------------------------------
+The directed-pair FE model is the primary recovery specification because many pair-HS2 links exit only once.
+The pair-HS2 FE model is a stringent robustness check identified only from links with repeated exit events and within-link variation in recovery outcomes.
+
+E. OUTPUT FILES
+------------------------------------------------------------------------------------------------------------
+outputs/audit/step14b_recovery_report.txt
+outputs/audit/step14b_recovery_input_audit.csv
+outputs/audit/step14b_recovery_model_audit.csv
+outputs/tables/step14b_recovery_interactions.csv
+outputs/tables/step14b_recovery_net_effects.csv
+
+F. NEXT ACTION
+------------------------------------------------------------------------------------------------------------
+Send the report, interaction CSV, net-effect CSV and model-audit CSV to ChatGPT before running recovery robustness or drafting the final empirical narrative.

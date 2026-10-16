@@ -1,0 +1,60 @@
+======================================================================================================
+AIID DTA–GPR PROJECT — STEP 11 HS2 SECTOR HETEROGENEITY
+======================================================================================================
+Project root: H:/AIID_DTA_GPR
+
+A. PRE-SPECIFIED SECTORS
+------------------------------------------------------------------------------------------------------
+1. Agro-food inputs — HS 01–24
+2. Minerals and fuels — HS 25–27
+3. Chemicals — HS 28–38
+4. Plastics, rubber and leather — HS 39–43
+5. Wood, pulp and paper — HS 44–49
+6. Textiles and footwear — HS 50–67
+7. Stone, glass and base metals — HS 68–83
+8. Machinery and electronics — HS 84–85
+9. Transport equipment — HS 86–89
+10. Precision and other manufactures — HS 90–99
+
+B. GPR × FTA — PAIR-CLUSTERED
+------------------------------------------------------------------------------------------------------
+Transport equipment: beta=-0.047446, effect=-4.634%, p=0.016333, BH-FDR p=0.040832
+Textiles and footwear: beta=-0.044674, effect=-4.369%, p=0.004314, BH-FDR p=0.017229
+Machinery and electronics: beta=-0.034934, effect=-3.433%, p=0.005169, BH-FDR p=0.017229
+Precision and other manufactures: beta=-0.032049, effect=-3.154%, p=0.001971, BH-FDR p=0.017229
+Stone, glass and base metals: beta=-0.023452, effect=-2.318%, p=0.333654, BH-FDR p=0.370726
+Plastics, rubber and leather: beta=-0.019376, effect=-1.919%, p=0.023274, BH-FDR p=0.046549
+Chemicals: beta=-0.017442, effect=-1.729%, p=0.148623, BH-FDR p=0.212318
+Minerals and fuels: beta=0.001818, effect=0.182%, p=0.943969, BH-FDR p=0.943969
+Agro-food inputs: beta=0.020157, effect=2.036%, p=0.183743, BH-FDR p=0.229678
+Wood, pulp and paper: beta=0.029586, effect=3.003%, p=0.030997, BH-FDR p=0.051662
+
+C. GPR × DTA DEPTH — PAIR-CLUSTERED
+------------------------------------------------------------------------------------------------------
+Textiles and footwear: beta=-0.020102, effect=-1.990%, p=0.000931, BH-FDR p=0.005345
+Transport equipment: beta=-0.018445, effect=-1.828%, p=0.029430, BH-FDR p=0.058860
+Precision and other manufactures: beta=-0.017301, effect=-1.715%, p=0.001069, BH-FDR p=0.005345
+Machinery and electronics: beta=-0.013536, effect=-1.344%, p=0.009186, BH-FDR p=0.030620
+Plastics, rubber and leather: beta=-0.010778, effect=-1.072%, p=0.020255, BH-FDR p=0.050638
+Stone, glass and base metals: beta=-0.004667, effect=-0.466%, p=0.637033, BH-FDR p=0.637033
+Agro-food inputs: beta=-0.004661, effect=-0.465%, p=0.434180, BH-FDR p=0.537096
+Chemicals: beta=-0.003750, effect=-0.374%, p=0.483386, BH-FDR p=0.537096
+Wood, pulp and paper: beta=0.008203, effect=0.824%, p=0.208972, BH-FDR p=0.298532
+Minerals and fuels: beta=0.022891, effect=2.316%, p=0.092237, BH-FDR p=0.153728
+
+D. MULTIPLE-TESTING SUMMARY
+------------------------------------------------------------------------------------------------------
+FTA sectors significant at BH-FDR 10%: 6
+Depth sectors significant at BH-FDR 10%: 5
+Raw p-values are exploratory. Sector findings should be emphasized only when they survive BH-FDR adjustment and remain directionally stable under pair + year clustering.
+
+E. OUTPUT FILES
+------------------------------------------------------------------------------------------------------
+outputs/audit/step11_hs2_sector_heterogeneity_report.txt
+outputs/audit/step11_hs2_sector_summary.csv
+outputs/audit/step11_hs2_sector_model_audit.csv
+outputs/tables/step11_hs2_sector_coefficients.csv
+
+F. NEXT ACTION
+------------------------------------------------------------------------------------------------------
+Send the report, coefficient CSV, sector-summary CSV and model-audit CSV to ChatGPT before interpreting sector-specific resilience or vulnerability.

@@ -1,0 +1,11 @@
+bundle_id,bundle,bundle_label,model_spec,input_rows,estimation_rows,removed_rows,elapsed_seconds
+1,border_coordination,Border coordination,standalone_bundle,16752461,16752356,105,89.55
+1,border_coordination,Border coordination,conditional_on_fta,16752461,16752356,105,110.5
+2,investment_production,Investment and production,standalone_bundle,16752461,16752356,105,67.52
+2,investment_production,Investment and production,conditional_on_fta,16752461,16752356,105,95.64
+3,digital_knowledge,Digital and knowledge,standalone_bundle,16752461,16752356,105,66.11
+3,digital_knowledge,Digital and knowledge,conditional_on_fta,16752461,16752356,105,95.3
+4,services_procurement,Services and procurement,standalone_bundle,16752461,16752356,105,67.8200000000001
+4,services_procurement,Services and procurement,conditional_on_fta,16752461,16752356,105,96.8499999999999
+5,environmental,Environmental provisions,standalone_bundle,16752461,16752356,105,67.39
+5,environmental,Environmental provisions,conditional_on_fta,16752461,16752356,105,97.24

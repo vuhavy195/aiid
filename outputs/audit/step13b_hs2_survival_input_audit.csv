@@ -1,0 +1,13 @@
+statistic,value
+rows,8219579
+mean_survival,0.849442410614948
+mean_exit,0.150557589385052
+pair_hs2_fe_groups,967746
+exporter_year_fe_groups,2560
+importer_year_fe_groups,2560
+hs2_year_fe_groups,1408
+unordered_pair_clusters,12436
+years,16
+minimum_year,2008
+maximum_year,2023
+mean_log1p_lagged_trade_musd,0.681602842749316

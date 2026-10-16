@@ -1,0 +1,16 @@
+﻿Variable,Definition,Source
+TradeValue,"Bilateral intermediate-goods exports from economy i to economy j, aggregated to HS2 and measured in millions of current U.S. dollars.",CEPII BACI HS2007; UNSD HS2007-BEC Rev. 4 correspondence
+FTA,Indicator equal to one when at least one preferential trade agreement was in force for the bilateral pair in the preceding year.,WTO RTA Database; World Bank Deep Trade Agreements Database
+DTAdepth,"Number of legally enforceable policy areas in active agreements, divided by ten; overlapping agreements are combined using the provision-level maximum.",World Bank Deep Trade Agreements Horizontal Content Database
+GlobalGPR,"Annual mean of the global Geopolitical Risk Index, standardized using the 1985-2019 historical mean and standard deviation.",Caldara and Iacoviello (2022)
+GPRThreat,Standardized annual mean of the geopolitical-threat component.,Caldara and Iacoviello (2022)
+GPRAct,Standardized annual mean of the geopolitical-acts component.,Caldara and Iacoviello (2022)
+GPRPeak,Standardized maximum monthly global GPR observation within each year.,Authors' calculation from Caldara and Iacoviello (2022)
+PairGPRAvg,Average of standardized exporter- and importer-specific GPR indices for each bilateral pair-year.,Authors' calculation from country-specific GPR series
+PairGPRMax,Maximum of standardized exporter- and importer-specific GPR indices for each bilateral pair-year.,Authors' calculation from country-specific GPR series
+Survival,Indicator equal to one when a pair-HS2 relationship with positive trade in t-1 remains positive in t.,Authors' calculation from CEPII BACI
+Reentry1Y,Indicator equal to one when an exited trade link records positive trade again in t+1.,Authors' calculation from CEPII BACI
+Reentry2Y,Indicator equal to one when an exited trade link records positive trade in t+1 or t+2.,Authors' calculation from CEPII BACI
+FullRecovery1Y,Indicator equal to one when trade in t+1 returns to at least the pre-exit value in t-1.,Authors' calculation from CEPII BACI
+FullRecovery2Y,Indicator equal to one when trade in t+1 or t+2 returns to at least the pre-exit value in t-1.,Authors' calculation from CEPII BACI
+LaggedTrade,Natural logarithm of one plus intermediate-goods trade value in the preceding year.,Authors' calculation from CEPII BACI

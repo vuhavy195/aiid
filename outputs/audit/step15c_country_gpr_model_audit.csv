@@ -1,0 +1,9 @@
+model,outcome_type,shock,input_rows,estimation_rows,removed_rows,elapsed_seconds
+trade_restricted_global_gpr,trade_value_ppml,restricted_global_gpr,2520781,2520781,0,17.36
+trade_pair_average_country_gpr,trade_value_ppml,pair_average_country_gpr,2520781,2520781,0,11.97
+trade_pair_maximum_country_gpr,trade_value_ppml,pair_maximum_country_gpr,2520781,2520781,0,12.42
+trade_pair_log_average_country_gpr,trade_value_ppml,pair_log_average_country_gpr,2520781,2520781,0,11.89
+survival_restricted_global_gpr,survival_lpm,restricted_global_gpr,1885368,1878443,6925,2.22
+survival_pair_average_country_gpr,survival_lpm,pair_average_country_gpr,1885368,1878443,6925,2.39
+survival_pair_maximum_country_gpr,survival_lpm,pair_maximum_country_gpr,1885368,1878443,6925,2.25
+survival_pair_log_average_country_gpr,survival_lpm,pair_log_average_country_gpr,1885368,1878443,6925,2.42

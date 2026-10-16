@@ -1,0 +1,61 @@
+==========================================================================================================
+AIID DTA–GPR PROJECT — STEP 13C TRADE-LINK SURVIVAL ROBUSTNESS
+==========================================================================================================
+Project root: H:/AIID_DTA_GPR
+
+A. ALTERNATIVE GPR — PAIR CLUSTERED
+----------------------------------------------------------------------------------------------------------
+act_gpr | shock_x_depth: beta=-0.003704, effect=-0.3704 pp, p=0.000000
+act_gpr | shock_x_fta: beta=0.005979, effect=0.5979 pp, p=0.000001
+log_mean_gpr | shock_x_depth: beta=-0.005281, effect=-0.5281 pp, p=0.000000
+log_mean_gpr | shock_x_fta: beta=0.002850, effect=0.2850 pp, p=0.006602
+mean_gpr | shock_x_depth: beta=-0.005235, effect=-0.5235 pp, p=0.000000
+mean_gpr | shock_x_fta: beta=0.002816, effect=0.2816 pp, p=0.005718
+peak_gpr | shock_x_depth: beta=-0.006490, effect=-0.6490 pp, p=0.000000
+peak_gpr | shock_x_fta: beta=0.003495, effect=0.3495 pp, p=0.005285
+threat_gpr | shock_x_depth: beta=-0.003442, effect=-0.3442 pp, p=0.000000
+threat_gpr | shock_x_fta: beta=0.000851, effect=0.0851 pp, p=0.211630
+
+B. ALTERNATIVE GPR — PAIR + YEAR CLUSTERED
+----------------------------------------------------------------------------------------------------------
+act_gpr | shock_x_depth: beta=-0.003704, p=0.229214
+act_gpr | shock_x_fta: beta=0.005979, p=0.007632
+log_mean_gpr | shock_x_depth: beta=-0.005281, p=0.007975
+log_mean_gpr | shock_x_fta: beta=0.002850, p=0.113255
+mean_gpr | shock_x_depth: beta=-0.005235, p=0.007195
+mean_gpr | shock_x_fta: beta=0.002816, p=0.086388
+peak_gpr | shock_x_depth: beta=-0.006490, p=0.007406
+peak_gpr | shock_x_fta: beta=0.003495, p=0.078627
+threat_gpr | shock_x_depth: beta=-0.003442, p=0.001989
+threat_gpr | shock_x_fta: beta=0.000851, p=0.490090
+
+C. ESTABLISHED-LINK SAMPLES — PAIR CLUSTERED
+----------------------------------------------------------------------------------------------------------
+lagged_trade_at_least_100k | shock_x_depth: beta=-0.001265, effect=-0.1265 pp, p=0.031138
+lagged_trade_at_least_100k | shock_x_fta: beta=0.001284, effect=0.1284 pp, p=0.188985
+lagged_trade_at_least_1m | shock_x_depth: beta=-0.001442, effect=-0.1442 pp, p=0.083093
+lagged_trade_at_least_1m | shock_x_fta: beta=0.000444, effect=0.0444 pp, p=0.699479
+
+D. LEAVE-ONE-YEAR-OUT SUMMARY
+----------------------------------------------------------------------------------------------------------
+pair_cluster | shock_x_fta: range=[0.001090, 0.003369], positive=16, negative=0, p<0.05 in 14/16, p<0.10 in 14/16
+pair_cluster | shock_x_depth: range=[-0.006801, -0.004019], positive=0, negative=16, p<0.05 in 16/16, p<0.10 in 16/16
+pair_plus_year_cluster | shock_x_fta: range=[0.001090, 0.003369], positive=16, negative=0, p<0.05 in 2/16, p<0.10 in 9/16
+pair_plus_year_cluster | shock_x_depth: range=[-0.006801, -0.004019], positive=0, negative=16, p<0.05 in 15/16, p<0.10 in 16/16
+
+E. INTERPRETATION RULE
+----------------------------------------------------------------------------------------------------------
+The joint FTA coefficient is the interaction effect when DTA depth equals zero. The total interaction for an FTA with D depth units is beta_FTA + D*beta_depth.
+One depth unit equals ten legally enforceable policy areas. Do not interpret the FTA coefficient alone as the effect for a typical deep agreement.
+
+F. OUTPUT FILES
+----------------------------------------------------------------------------------------------------------
+outputs/audit/step13c_survival_robustness_report.txt
+outputs/audit/step13c_reconstructed_gpr_audit.csv
+outputs/audit/step13c_survival_robustness_model_audit.csv
+outputs/tables/step13c_survival_robustness_coefficients.csv
+outputs/tables/step13c_survival_leave_one_year_out.csv
+
+G. NEXT ACTION
+----------------------------------------------------------------------------------------------------------
+Send the report, coefficient CSV, leave-one-year-out CSV and model-audit CSV to ChatGPT before moving to recovery dynamics.

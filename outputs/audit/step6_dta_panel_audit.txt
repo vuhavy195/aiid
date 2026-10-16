@@ -1,0 +1,58 @@
+============================================================================================
+AIID DTA–GPR PROJECT — STEP 6 DTA PAIR-YEAR PANEL
+============================================================================================
+Project root: H:\AIID_DTA_GPR
+Trade-period output: 2007–2023
+Lag base year included internally: 2006
+
+A. PANEL STRUCTURE
+--------------------------------------------------------------------------------------------
+Directed pair-year rows: 432,480
+Unique unordered pairs: 12,720
+Pairs with an active agreement at least once: 4,201
+Directed pair-years with FTA active: 114,762 (26.535794%)
+
+B. CONTENT COMPLETENESS
+--------------------------------------------------------------------------------------------
+Directed pair-years with incomplete current depth coding: 44
+Directed pair-years with incomplete lagged depth coding: 26
+Baseline rule: keep FTA status, but set depth to missing whenever any active agreement lacks content coding.
+
+C. DEPTH DISTRIBUTION
+--------------------------------------------------------------------------------------------
+Mean strict depth among active, complete pair-years: 12.6805
+Median strict depth among active, complete pair-years: 11.0000
+Maximum strict depth among active, complete pair-years: 38
+
+D. TREATMENT CHANGES
+--------------------------------------------------------------------------------------------
+Directed new-FTA-entry rows: 3,946
+Directed positive depth-change rows: 5,248
+Directed negative depth-change rows: 1,680
+
+E. CONSTRUCTION RULES
+--------------------------------------------------------------------------------------------
+1. The DTA bilateral table is collapsed to unordered pairs because agreement content is symmetric.
+2. Overlapping agreements are combined using the provision-level maximum, not by adding agreement depth scores.
+3. Strict depth counts policy areas coded 2; broad depth counts policy areas coded 1 or 2.
+4. No-FTA pair-years receive depth 0 and complete-data status.
+5. Pair-years involving any uncoded active agreement keep observed lower-bound depth but receive missing complete depth.
+6. Lagged variables use the previous calendar year, including 2006 for the 2007 trade outcome.
+
+F. OUTPUT FILES
+--------------------------------------------------------------------------------------------
+data/processed/dta_pair_year_core_160.parquet
+data/interim/dta_active_pair_year_le_provisions_160.parquet
+data/interim/dta_active_agreement_records_160.parquet
+outputs/audit/step6_dta_panel_audit.txt
+outputs/audit/step6_dta_yearly_summary.csv
+outputs/audit/step6_dta_depth_distribution.csv
+outputs/audit/step6_dta_missing_content_pair_years.csv
+outputs/audit/step6_dta_changes.csv
+outputs/audit/step6_vietnam_dta_changes.csv
+outputs/audit/step6_vietnam_key_agreement_check.csv
+
+G. NEXT ACTION
+--------------------------------------------------------------------------------------------
+Send the audit report, yearly summary, missing-content file and Vietnam key-agreement check to ChatGPT.
+Do not standardize depth or run PPML yet. The annual GPR variables must be built and audited next.

@@ -1,0 +1,21 @@
+sector_id,sector_name,model,input_rows,estimation_rows,removed_rows,elapsed_seconds
+1,Agro-food inputs,fta,3280662,3280602,60,20.59
+1,Agro-food inputs,depth,3280662,3280602,60,19.95
+2,Minerals and fuels,fta,609117,609012,105,4.77
+2,Minerals and fuels,depth,609117,609012,105,4.72
+3,Chemicals,fta,2416561,2416561,0,14.27
+3,Chemicals,depth,2416561,2416561,0,14.15
+4,"Plastics, rubber and leather",fta,947987,947987,0,5.72999999999999
+4,"Plastics, rubber and leather",depth,947987,947987,0,5.41999999999999
+5,"Wood, pulp and paper",fta,1131024,1131024,0,7.5
+5,"Wood, pulp and paper",depth,1131024,1131024,0,7.32000000000002
+6,Textiles and footwear,fta,2522071,2522056,15,16.78
+6,Textiles and footwear,depth,2522071,2522056,15,16.67
+7,"Stone, glass and base metals",fta,3280142,3280112,30,14.22
+7,"Stone, glass and base metals",depth,3280142,3280112,30,14.72
+8,Machinery and electronics,fta,723655,723655,0,2.97
+8,Machinery and electronics,depth,723655,723655,0,2.92000000000002
+9,Transport equipment,fta,669321,669321,0,3.67999999999998
+9,Transport equipment,depth,669321,669321,0,3.64000000000002
+10,Precision and other manufactures,fta,1171921,1171921,0,4.94
+10,Precision and other manufactures,depth,1171921,1171921,0,5.23999999999998

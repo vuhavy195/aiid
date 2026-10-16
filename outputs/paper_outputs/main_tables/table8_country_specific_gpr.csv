@@ -1,0 +1,41 @@
+﻿Panel,Shock,GPR x FTA,GPR x DTA depth,N
+A. Intermediate-goods trade value,Average pair-country GPR,"-0.0852***
+(0.0319)
+[-8.17%]","0.0280**
+(0.0118)
+[+2.84%]","2,520,781"
+A. Intermediate-goods trade value,Log-average pair-country GPR,"-0.0843***
+(0.0294)
+[-8.09%]","0.0277**
+(0.0111)
+[+2.81%]","2,520,781"
+A. Intermediate-goods trade value,Maximum pair-country GPR,"-0.0796**
+(0.0339)
+[-7.65%]","0.0240*
+(0.0129)
+[+2.43%]","2,520,781"
+A. Intermediate-goods trade value,Restricted-sample global GPR,"-0.0617***
+(0.0217)
+[-5.98%]","0.0160
+(0.0109)
+[+1.62%]","2,520,781"
+B. Trade-link survival,Average pair-country GPR,"-0.0006
+(0.0020)
+[-0.06 pp]","-0.0017***
+(0.0004)
+[-0.17 pp]","1,878,443"
+B. Trade-link survival,Log-average pair-country GPR,"-0.0014
+(0.0019)
+[-0.14 pp]","-0.0015***
+(0.0004)
+[-0.15 pp]","1,878,443"
+B. Trade-link survival,Maximum pair-country GPR,"0.0007
+(0.0021)
+[+0.07 pp]","-0.0020***
+(0.0005)
+[-0.20 pp]","1,878,443"
+B. Trade-link survival,Restricted-sample global GPR,"0.0029*
+(0.0016)
+[+0.29 pp]","-0.0038***
+(0.0010)
+[-0.38 pp]","1,878,443"

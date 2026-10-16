@@ -1,0 +1,19 @@
+[     0.5s] intra-EU share of the estimation sample: 9.8%
+[     5.3s]   demeaned ['g_eu', 'eu'] in 3.3s (survival_main)
+[     5.4s] within-FE variance of the intra-EU level: 1.36e-03 (kept)
+[     7.9s]                          model inference term  estimate  std_error   t_value  p_value    ci_low   ci_high    df    nobs
+Table 4 col 5 + GPR x intra-EU      pair   gf -0.000925   0.001177 -0.785818 0.431990 -0.003231  0.001382 11871 8045131
+Table 4 col 5 + GPR x intra-EU      pair   gd -0.001360   0.000816 -1.667918 0.095358 -0.002959  0.000238 11871 8045131
+Table 4 col 5 + GPR x intra-EU      pair    f  0.008235   0.002908  2.832278 0.004630  0.002536  0.013935 11871 8045131
+Table 4 col 5 + GPR x intra-EU      pair    d -0.002113   0.001865 -1.132604 0.257403 -0.005769  0.001544 11871 8045131
+Table 4 col 5 + GPR x intra-EU      pair    l  0.015766   0.000386 40.880543 0.000000  0.015010  0.016522 11871 8045131
+Table 4 col 5 + GPR x intra-EU      pair g_eu -0.013534   0.001796 -7.534929 0.000000 -0.017055 -0.010013 11871 8045131
+Table 4 col 5 + GPR x intra-EU      pair   eu  0.029045   0.004976  5.836396 0.000000  0.019290  0.038799 11871 8045131
+Table 4 col 5 + GPR x intra-EU pair_year   gf -0.000925   0.001822 -0.507628 0.619096 -0.004807  0.002958    15 8045131
+Table 4 col 5 + GPR x intra-EU pair_year   gd -0.001360   0.001258 -1.080834 0.296843 -0.004043  0.001322    15 8045131
+Table 4 col 5 + GPR x intra-EU pair_year    f  0.008235   0.004408  1.868239 0.081388 -0.001160  0.017631    15 8045131
+Table 4 col 5 + GPR x intra-EU pair_year    d -0.002113   0.003183 -0.663797 0.516894 -0.008897  0.004671    15 8045131
+Table 4 col 5 + GPR x intra-EU pair_year    l  0.015766   0.001051 15.002853 0.000000  0.013526  0.018005    15 8045131
+Table 4 col 5 + GPR x intra-EU pair_year g_eu -0.013534   0.002398 -5.644376 0.000047 -0.018645 -0.008423    15 8045131
+Table 4 col 5 + GPR x intra-EU pair_year   eu  0.029045   0.006990  4.155309 0.000846  0.014146  0.043943    15 8045131
+[     7.9s] done

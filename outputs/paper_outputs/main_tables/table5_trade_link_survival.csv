@@ -1,0 +1,21 @@
+﻿Variable,"(1) FTA, no size",(2) FTA + size,"(3) Depth, no size",(4) Depth + size,(5) Joint + size
+GPR x DTA depth,—,—,"-0.0040*
+(0.0021)
+[-0.40 pp]","-0.0042*
+(0.0021)
+[-0.42 pp]","-0.0052***
+(0.0017)
+[-0.52 pp]"
+GPR x FTA,"-0.0044
+(0.0036)
+[-0.44 pp]","-0.0047
+(0.0037)
+[-0.47 pp]",—,—,"0.0028*
+(0.0015)
+[+0.28 pp]"
+Lagged link-size control,No,Yes,No,Yes,Yes
+Pair-HS2 fixed effects,Yes,Yes,Yes,Yes,Yes
+Exporter-year fixed effects,Yes,Yes,Yes,Yes,Yes
+Importer-year fixed effects,Yes,Yes,Yes,Yes,Yes
+HS2-year fixed effects,Yes,Yes,Yes,Yes,Yes
+Observations,"8,045,131","8,045,131","8,045,131","8,045,131","8,045,131"

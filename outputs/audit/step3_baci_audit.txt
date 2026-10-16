@@ -1,0 +1,41 @@
+========================================================================================
+AIID DTA–GPR PROJECT — STEP 3 BACI AUDIT
+========================================================================================
+Project root: H:\AIID_DTA_GPR
+Years audited: 2007–2023
+
+A. ANNUAL BACI FILES
+----------------------------------------------------------------------------------------
+Years with PASS status: 17 of 17
+Total raw rows: 176,846,063
+Total trade value (thousand current USD): 303,771,428,915.73
+Duplicate excess rows: 0
+Unknown exporter rows: 0
+Unknown importer rows: 0
+Unknown product rows: 0
+
+B. COUNTRY SAMPLE PREVIEW
+----------------------------------------------------------------------------------------
+Country metadata codes: 238
+Preliminary eligible economies with full 2007–2023 exporter/importer coverage: 219
+Target-160 preview size: 160
+Target-160 share of global BACI exports over 2007–2023: 97.6737%
+
+C. PRODUCT CHECK
+----------------------------------------------------------------------------------------
+Products observed in trade data: 5,047
+Trade-value share of special product 999999: 0.000000%
+
+D. OUTPUT FILES
+----------------------------------------------------------------------------------------
+outputs/audit/step3_baci_audit.txt
+outputs/audit/step3_annual_baci_audit.csv
+outputs/audit/step3_country_year_coverage.csv
+outputs/audit/step3_country_sample_candidates.csv
+outputs/audit/step3_country_target160_preview.csv
+outputs/audit/step3_country_exclusion_review.csv
+outputs/audit/step3_product_coverage.csv
+
+E. NEXT ACTION
+----------------------------------------------------------------------------------------
+Send the report and country/sample CSV files to ChatGPT. Do not treat the target-160 list as final until it has been reviewed.

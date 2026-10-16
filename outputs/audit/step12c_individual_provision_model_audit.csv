@@ -1,0 +1,15 @@
+provision_id,provision,provision_label,input_rows,estimation_rows,removed_rows,elapsed_seconds
+1,Customs,Customs,16752461,16752356,105,114.03
+2,SPS,Sanitary and phytosanitary measures,16752461,16752356,105,99.4
+3,TBT,Technical barriers to trade,16752461,16752356,105,104.11
+4,PublicProcurement,Public procurement,16752461,16752356,105,104.66
+5,TRIMs,Trade-related investment measures,16752461,16752356,105,99.1
+6,GATS,Trade in services,16752461,16752356,105,97.34
+7,TRIPs,Trade-related intellectual property,16752461,16752356,105,97.1899999999999
+8,CompetitionPolicy,Competition policy,16752461,16752356,105,95.11
+9,EnvironmentalLaws,Environmental laws,16752461,16752356,105,103.86
+10,IPR,Intellectual property rights,16752461,16752356,105,100.33
+11,Investment,Investment,16752461,16752356,105,97
+12,DataProtection,Data protection,16752461,16752356,105,96.7000000000001
+13,ResearchandTechnology,Research and technology,16752461,16752356,105,94.99
+14,MovementofCapital,Movement of capital,16752461,16752356,105,256.49

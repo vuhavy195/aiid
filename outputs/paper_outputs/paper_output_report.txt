@@ -1,0 +1,31 @@
+============================================================================================
+AIID DTA-GPR PAPER OUTPUT GENERATOR COMPLETED
+============================================================================================
+Output root: H:/AIID_DTA_GPR/outputs/paper_outputs
+
+MAIN TABLES
+- Table 1: Variable definitions and sources
+- Table 2: Descriptive statistics
+- Table 3: Baseline PPML
+- Table 4: Key sector heterogeneity
+- Table 5: Trade-link survival
+- Table 6: Survival robustness
+- Table 7: Post-exit recovery
+- Table 8: Country-specific GPR robustness
+
+MAIN FIGURES
+- Figure 1: Conceptual framework
+- Figure 2: GPR and agreement coverage
+- Figure 3: Sector heterogeneity coefficient plot
+- Figure 4: Leave-one-year-out survival estimates
+
+APPENDIX OUTPUTS
+- Full ten-sector table
+- DTA bundle table
+- Individual-provision table
+- Recovery net-effects table
+- Annual exit/re-entry figure when audit columns are available
+- Country-GPR coefficient figure
+
+Excel workbook: H:/AIID_DTA_GPR/outputs/paper_outputs/AIID_DTA_GPR_Paper_Tables.xlsx
+Manifest: H:/AIID_DTA_GPR/outputs/paper_outputs/paper_output_manifest.csv

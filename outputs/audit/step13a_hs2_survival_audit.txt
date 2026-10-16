@@ -1,0 +1,38 @@
+====================================================================================================
+AIID DTA–GPR PROJECT — STEP 13A HS2 TRADE-LINK SURVIVAL PANEL
+====================================================================================================
+Project root: H:\AIID_DTA_GPR
+
+A. OUTCOME DEFINITION
+----------------------------------------------------------------------------------------------------
+A pair-HS2 link enters the risk set in year t when intermediate trade was positive in t-1.
+survive_t = 1 when the link remains positive in t; survive_t = 0 when it disappears.
+
+B. PANEL AUDIT
+----------------------------------------------------------------------------------------------------
+At-risk link-year rows: 8,219,579
+Surviving rows: 6,982,059
+Exiting rows: 1,237,520
+Overall survival rate: 84.944241%
+Overall exit rate: 15.055759%
+At-risk pair-HS2 groups: 967,746
+Unordered-pair clusters: 12,436
+Years: 2008–2023
+Output Parquet size: 0.184 GB
+
+C. DESCRIPTIVE CHECKS
+----------------------------------------------------------------------------------------------------
+Year with highest exit rate: 2020 (16.237665%)
+Sector with lowest survival rate: Agro-food inputs (82.459207%)
+
+D. OUTPUT FILES
+----------------------------------------------------------------------------------------------------
+data/processed/estimation_hs2_trade_link_survival.parquet
+outputs/audit/step13a_hs2_survival_audit.txt
+outputs/audit/step13a_hs2_survival_summary.csv
+outputs/audit/step13a_hs2_survival_by_year.csv
+outputs/audit/step13a_hs2_survival_by_sector.csv
+
+E. NEXT ACTION
+----------------------------------------------------------------------------------------------------
+Send the audit report and three summary CSVs to ChatGPT before estimating survival models.

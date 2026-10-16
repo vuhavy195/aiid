@@ -1,0 +1,50 @@
+============================================================================================================
+AIID DTA–GPR PROJECT — STEP 15B COUNTRY-SPECIFIC PAIR-GPR PANELS
+============================================================================================================
+Project root: H:\AIID_DTA_GPR
+
+A. COUNTRY COVERAGE
+------------------------------------------------------------------------------------------------------------
+Country-specific GPR series in source: 44
+Series overlapping the final 160-economy sample: 44
+Potential unordered pairs among covered economies: 946
+
+B. PAIR-SHOCK CONSTRUCTION
+------------------------------------------------------------------------------------------------------------
+Average shock: mean of exporter and importer country-specific GPR z-scores.
+Maximum shock: larger of exporter and importer country-specific GPR z-scores.
+Both shocks are re-standardized over all covered unordered pair-years in 2007–2023.
+Correlation, average vs maximum pair GPR: 0.970819
+Correlation, average pair GPR vs global GPR: 0.615525
+Correlation, maximum pair GPR vs global GPR: 0.589821
+
+C. TRADE-VALUE ROBUSTNESS PANEL
+------------------------------------------------------------------------------------------------------------
+Rows: 2,520,781
+Unordered-pair clusters: 946
+Retained share of the global-GPR panel: 15.047228%
+
+D. LINK-SURVIVAL ROBUSTNESS PANEL
+------------------------------------------------------------------------------------------------------------
+Rows: 1,885,368
+Unordered-pair clusters: 946
+Retained share of the global-GPR panel: 22.937525%
+Survival rate in covered-country panel: 94.121360%
+
+E. INTERPRETATION LIMIT
+------------------------------------------------------------------------------------------------------------
+This is a restricted-sample robustness check, not a replacement for the global-GPR baseline. It covers only pairs for which both countries have a national GPR series.
+
+F. OUTPUT FILES
+------------------------------------------------------------------------------------------------------------
+data/interim/country_specific_pair_gpr_2007_2023.parquet
+data/processed/estimation_hs2_ppml_country_gpr.parquet
+data/processed/estimation_hs2_survival_country_gpr.parquet
+outputs/audit/step15b_country_gpr_panel_audit.txt
+outputs/audit/step15b_country_gpr_sample_coverage.csv
+outputs/audit/step15b_country_gpr_pair_shock_summary.csv
+outputs/audit/step15b_country_gpr_panel_summary.csv
+
+G. NEXT ACTION
+------------------------------------------------------------------------------------------------------------
+Send the report and three audit CSVs to ChatGPT before estimating country-specific GPR regressions.

@@ -1,0 +1,12 @@
+statistic,value
+pair_year_baseline_rows,432454
+ddd_baseline_rows,864908
+raw_corr_fta_depth,0.733802378168359
+unique_unordered_pairs,12720
+unordered_pairs_with_any_fta_change,2011
+unordered_pairs_with_any_depth_change,2715
+years,17
+minimum_depth,0
+median_depth,0
+mean_depth,0.32409181092093
+maximum_depth,3.8

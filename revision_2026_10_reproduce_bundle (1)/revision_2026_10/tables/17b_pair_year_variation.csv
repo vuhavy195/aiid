@@ -1,0 +1,11 @@
+statistic,value
+unordered pairs,12720.0
+pairs with an agreement in force in some year (t-1 status),4198.0
+pairs with an agreement in force in every year,2187.0
+pairs entering an agreement during 2007-2023,1967.0
+pairs leaving an agreement during 2007-2023,81.0
+pairs whose depth changed while an agreement stayed in force,853.0
+member pair-years with a depth change vs previous year,1385.0
+member pair-years,55477.0
+between-pair SD of depth among members (/10),0.9234481789488951
+within-pair SD of depth among members (/10),0.11447535654357731

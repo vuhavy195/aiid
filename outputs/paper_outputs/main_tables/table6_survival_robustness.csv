@@ -1,0 +1,9 @@
+﻿Panel,Check,Estimate,SE,Effect (pp),p-value,N
+A. Alternative global GPR measures,Baseline annual mean GPR,-0.0052,0.0017,-0.523,0.0072,"8,045,131"
+A. Alternative global GPR measures,Log annual mean GPR,-0.0053,0.0017,-0.528,0.008,"8,045,131"
+A. Alternative global GPR measures,GPR threats,-0.0034,9e-04,-0.344,0.002,"8,045,131"
+A. Alternative global GPR measures,GPR acts,-0.0037,0.003,-0.37,0.2292,"8,045,131"
+A. Alternative global GPR measures,Annual peak GPR,-0.0065,0.0021,-0.649,0.0074,"8,045,131"
+B. Established-link samples,"Lagged trade at least USD 100,000",-0.0013,4e-04,-0.127,0.0113,"3,842,229"
+B. Established-link samples,Lagged trade at least USD 1 million,-0.0014,6e-04,-0.144,0.0194,"2,079,423"
+C. Active-FTA-only sample,"FTA-only, size-adjusted survival",-0.0046,0.0031,-0.457,0.1623,"3,479,262"

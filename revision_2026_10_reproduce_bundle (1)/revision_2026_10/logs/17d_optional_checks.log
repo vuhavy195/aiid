@@ -1,0 +1,29 @@
+[     0.0s] pair: cov(GPRxFTA, GPRxDepth) = -3.117e-07, corr = -0.620
+[     0.0s] pair_year: cov(GPRxFTA, GPRxDepth) = 1.725e-06, corr = 0.667
+[     0.0s] inference                               band  cov_gf_gd  zero_crossing_provisions  band_excludes_zero_from_provisions  p_below_0_10_from_provisions  band_above_zero_up_to_provisions
+     pair                    true covariance -3.117e-07                     5.379                                8.48                             8                              1.75
+     pair zero covariance (published figure)          0                     5.379                                9.59                          8.87                              1.55
+pair_year                    true covariance  1.725e-06                     5.379                               31.71                         21.28                               NaN
+pair_year zero covariance (published figure)          0                     5.379                               21.21                         15.54                               NaN
+[     1.4s] drop2020: n = 7,483,836
+[    12.7s]   demeaned ['y_survive', 'gf', 'gd', 'f', 'd', 'l'] in 9.8s (survival_drop2020)
+[    15.2s] drop2020_2021: n = 6,935,846
+[    25.2s]   demeaned ['y_survive', 'gf', 'gd', 'f', 'd', 'l'] in 8.6s (survival_drop2020_2021)
+[    26.8s] validation vs stored LOYO 2020 [pair]: estimate -0.00544473 vs -0.00544473; SE 0.00053568 vs 0.00053568; N 7,483,836 vs 7,483,836
+[    26.8s] validation vs stored LOYO 2020 [pair_year]: estimate -0.00544473 vs -0.00544473; SE 0.00207584 vs 0.00207584; N 7,483,836 vs 7,483,836
+[    26.9s] value-weighted exit rate = 0.00251; unweighted = 0.13277
+[   131.6s]   demeaned ['y_survive', 'gf', 'gd', 'f', 'd', 'l'] in 102.8s (survival_value_weighted)
+[   133.5s]                              model inference term  estimate  std_error    t_value  p_value    ci_low   ci_high    df    nobs
+      joint_size_adjusted_drop2020      pair   gf  0.002531   0.001107   2.286703 0.022231  0.000361  0.004700 11812 7483836
+      joint_size_adjusted_drop2020      pair   gd -0.005445   0.000536 -10.164082 0.000000 -0.006495 -0.004395 11812 7483836
+      joint_size_adjusted_drop2020 pair_year   gf  0.002531   0.002044   1.237822 0.236140 -0.001854  0.006915    14 7483836
+      joint_size_adjusted_drop2020 pair_year   gd -0.005445   0.002076  -2.622901 0.020062 -0.009897 -0.000992    14 7483836
+ joint_size_adjusted_drop2020_2021      pair   gf -0.000039   0.001273  -0.030580 0.975605 -0.002534  0.002456 11765 6935846
+ joint_size_adjusted_drop2020_2021      pair   gd -0.007547   0.000613 -12.304219 0.000000 -0.008749 -0.006345 11765 6935846
+ joint_size_adjusted_drop2020_2021 pair_year   gf -0.000039   0.001618  -0.024063 0.981168 -0.003533  0.003456    13 6935846
+ joint_size_adjusted_drop2020_2021 pair_year   gd -0.007547   0.001329  -5.680472 0.000075 -0.010417 -0.004677    13 6935846
+joint_size_adjusted_value_weighted      pair   gf -0.000618   0.000781  -0.791917 0.428425 -0.002149  0.000912 11871 8045131
+joint_size_adjusted_value_weighted      pair   gd -0.001030   0.000533  -1.934433 0.053084 -0.002074  0.000014 11871 8045131
+joint_size_adjusted_value_weighted pair_year   gf -0.000618   0.000556  -1.112626 0.283383 -0.001803  0.000566    15 8045131
+joint_size_adjusted_value_weighted pair_year   gd -0.001030   0.000560  -1.838826 0.085821 -0.002225  0.000164    15 8045131
+[   133.5s] done

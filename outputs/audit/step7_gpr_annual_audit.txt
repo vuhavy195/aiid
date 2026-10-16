@@ -1,0 +1,64 @@
+============================================================================================
+AIID DTA–GPR PROJECT — STEP 7 GPR ANNUAL PANEL
+============================================================================================
+Project root: H:\AIID_DTA_GPR
+
+A. SOURCE AND COVERAGE
+--------------------------------------------------------------------------------------------
+Recent global GPR reference period: 1985–2019
+Trade-period annual output: 2007–2023
+Monthly observations in reference through trade period: 468
+All annual observations contain 12 monthly values: True
+Country-specific recent GPR series: 44
+Country-specific annual rows: 1,716
+
+B. BASELINE VARIABLES
+--------------------------------------------------------------------------------------------
+Main shock variable: gpr_mean_z (annual mean, standardized using 1985–2019)
+Main nonlinear robustness: log_gpr_mean_z
+Components: gpr_threat_mean_z and gpr_act_mean_z
+Peak-risk robustness: gpr_max_z
+Dynamic innovation measure: gpr_change_z
+
+C. REFERENCE THRESHOLDS
+--------------------------------------------------------------------------------------------
+Monthly GPR 75th-percentile threshold: 106.840193
+Monthly GPR 90th-percentile threshold: 137.144736
+Annual-mean GPR 75th-percentile threshold: 106.665478
+Annual-mean GPR 90th-percentile threshold: 141.431223
+Trade-period years above annual p75: [2017, 2022, 2023]
+Trade-period years above annual p90: [2022]
+Trade-period years with at least one month above monthly p90:
+  2014: 1 month(s)
+  2015: 2 month(s)
+  2017: 1 month(s)
+  2020: 1 month(s)
+  2022: 6 month(s)
+  2023: 3 month(s)
+
+D. CORRELATIONS, 2007–2023
+--------------------------------------------------------------------------------------------
+Corr(GPR mean, GPR threats mean): 0.913771
+Corr(GPR mean, GPR acts mean): 0.708953
+
+E. MODEL NOTE
+--------------------------------------------------------------------------------------------
+Global GPR varies only by year. Its standalone coefficient is absorbed by year fixed effects.
+The main estimand is therefore the interaction between GPR and lagged bilateral DTA depth.
+Use continuous gpr_mean_z in the baseline. Annual p90 identifies only very few trade-period years and should not be the primary treatment.
+
+F. OUTPUT FILES
+--------------------------------------------------------------------------------------------
+data/processed/gpr_annual_core_2007_2023.parquet
+data/processed/gpr_annual_core_2007_2023.csv
+data/interim/gpr_annual_1985_2023.csv
+data/interim/gpr_country_annual_1985_2023.parquet
+outputs/audit/step7_gpr_annual_audit.txt
+outputs/audit/step7_gpr_reference_statistics.csv
+outputs/audit/step7_gpr_annual_preview.csv
+outputs/audit/step7_country_gpr_coverage.csv
+
+G. NEXT ACTION
+--------------------------------------------------------------------------------------------
+Send the audit report, annual preview, reference-statistics file and country-coverage file to ChatGPT.
+Do not run PPML yet. The next step merges trade, DTA and GPR and constructs the estimation panels.

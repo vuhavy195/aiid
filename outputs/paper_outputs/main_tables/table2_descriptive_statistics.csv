@@ -1,0 +1,11 @@
+﻿Variable,N,Mean,SD,Min,p25,Median,p75,Max
+Intermediate-goods trade value (USD million),16752461,10.303,276.895,0,0,0,0.1,154728.17
+"FTA membership, t-1",16752461,0.358,0.479,0,0,0,1,1
+"Legally enforceable DTA depth, t-1",16752461,0.531,0.97,0,0,0,0.8,3.8
+"Global GPR, standardized",16752461,-0.132,0.683,-0.811,-0.606,-0.323,0.01,2.056
+"Lagged link size, ln(1 + Trade t-1)",8219579,0.682,1.246,0,0.005,0.077,0.742,11.949
+Trade-link survival,8219579,0.849,0.358,0,1,1,1,1
+Post-exit re-entry within one year,1152080,0.341,0.474,0,0,0,1,1
+Post-exit re-entry within two years,1065382,0.497,0.5,0,0,0,1,1
+Full recovery within one year,1152080,0.171,0.376,0,0,0,0,1
+Full recovery within two years,1065382,0.281,0.45,0,0,0,1,1

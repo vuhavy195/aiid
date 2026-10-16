@@ -1,0 +1,62 @@
+==========================================================================================================
+AIID DTA–GPR PROJECT — STEP 12C INDIVIDUAL DTA PROVISION SCREEN
+==========================================================================================================
+Project root: H:/AIID_DTA_GPR
+
+A. DESIGN
+----------------------------------------------------------------------------------------------------------
+Fourteen legally enforceable provisions are tested separately, conditional on FTA membership and GPR × FTA.
+InformationSociety and InnovationPolicies are excluded from the confirmatory screen because they occur in only 287 and 29 unordered pairs, respectively.
+BH-FDR correction is applied across fourteen tests separately for each clustering method.
+
+B. PAIR-CLUSTERED RESULTS
+----------------------------------------------------------------------------------------------------------
+Trade in services: beta=-0.020737, effect=-2.052%, p=0.194455, BH-FDR p=0.453728
+Investment: beta=-0.011863, effect=-1.179%, p=0.447001, BH-FDR p=0.521501
+Customs: beta=-0.002377, effect=-0.237%, p=0.901321, BH-FDR p=0.970654
+Trade-related investment measures: beta=0.000386, effect=0.039%, p=0.977057, BH-FDR p=0.977057
+Data protection: beta=0.014593, effect=1.470%, p=0.422272, BH-FDR p=0.521501
+Sanitary and phytosanitary measures: beta=0.014966, effect=1.508%, p=0.352199, BH-FDR p=0.521501
+Intellectual property rights: beta=0.015957, effect=1.608%, p=0.376469, BH-FDR p=0.521501
+Trade-related intellectual property: beta=0.015985, effect=1.611%, p=0.385836, BH-FDR p=0.521501
+Technical barriers to trade: beta=0.020535, effect=2.075%, p=0.289439, BH-FDR p=0.521501
+Movement of capital: beta=0.021507, effect=2.174%, p=0.173619, BH-FDR p=0.453728
+Public procurement: beta=0.033027, effect=3.358%, p=0.094289, BH-FDR p=0.330012
+Research and technology: beta=0.034291, effect=3.489%, p=0.048235, BH-FDR p=0.330012
+Competition policy: beta=0.035322, effect=3.595%, p=0.087396, BH-FDR p=0.330012
+Environmental laws: beta=0.038358, effect=3.910%, p=0.026459, BH-FDR p=0.330012
+
+C. PAIR + YEAR CLUSTERED RESULTS
+----------------------------------------------------------------------------------------------------------
+Trade in services: beta=-0.020737, p=0.215905, BH-FDR p=0.411553
+Investment: beta=-0.011863, p=0.436483, BH-FDR p=0.509230
+Customs: beta=-0.002377, p=0.877335, BH-FDR p=0.944822
+Trade-related investment measures: beta=0.000386, p=0.969160, BH-FDR p=0.969160
+Data protection: beta=0.014593, p=0.264570, BH-FDR p=0.411553
+Sanitary and phytosanitary measures: beta=0.014966, p=0.355143, BH-FDR p=0.497200
+Intellectual property rights: beta=0.015957, p=0.395427, BH-FDR p=0.503270
+Trade-related intellectual property: beta=0.015985, p=0.255305, BH-FDR p=0.411553
+Technical barriers to trade: beta=0.020535, p=0.234514, BH-FDR p=0.411553
+Movement of capital: beta=0.021507, p=0.080775, BH-FDR p=0.282714
+Public procurement: beta=0.033027, p=0.111840, BH-FDR p=0.313151
+Research and technology: beta=0.034291, p=0.041382, BH-FDR p=0.228128
+Competition policy: beta=0.035322, p=0.036514, BH-FDR p=0.228128
+Environmental laws: beta=0.038358, p=0.048885, BH-FDR p=0.228128
+
+D. MULTIPLE-TESTING SUMMARY
+----------------------------------------------------------------------------------------------------------
+Pair-cluster FDR survivors at 10%: 0
+Pair + year FDR survivors at 10%: 0
+Stable survivors across both clustering rules: 0
+Only stable FDR survivors should be described as credible provision-level channels. Other coefficients remain exploratory.
+
+E. OUTPUT FILES
+----------------------------------------------------------------------------------------------------------
+outputs/audit/step12c_individual_provision_report.txt
+outputs/audit/step12c_individual_provision_support.csv
+outputs/audit/step12c_individual_provision_model_audit.csv
+outputs/tables/step12c_individual_provision_coefficients.csv
+
+F. NEXT ACTION
+----------------------------------------------------------------------------------------------------------
+Send the report, coefficient CSV, support CSV and model-audit CSV to ChatGPT. After this screen, stop searching DTA composition and move to resilience outcomes.

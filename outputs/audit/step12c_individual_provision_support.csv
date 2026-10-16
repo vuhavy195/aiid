@@ -1,0 +1,15 @@
+provision_id,provision,provision_label,clusters_with_provision,support_threshold,passes_support_threshold
+1,Customs,Customs,3268,500,TRUE
+2,SPS,Sanitary and phytosanitary measures,2210,500,TRUE
+3,TBT,Technical barriers to trade,2466,500,TRUE
+4,PublicProcurement,Public procurement,1725,500,TRUE
+5,TRIMs,Trade-related investment measures,887,500,TRUE
+6,GATS,Trade in services,2416,500,TRUE
+7,TRIPs,Trade-related intellectual property,2189,500,TRUE
+8,CompetitionPolicy,Competition policy,1609,500,TRUE
+9,EnvironmentalLaws,Environmental laws,855,500,TRUE
+10,IPR,Intellectual property rights,2030,500,TRUE
+11,Investment,Investment,1589,500,TRUE
+12,DataProtection,Data protection,930,500,TRUE
+13,ResearchandTechnology,Research and technology,518,500,TRUE
+14,MovementofCapital,Movement of capital,2561,500,TRUE

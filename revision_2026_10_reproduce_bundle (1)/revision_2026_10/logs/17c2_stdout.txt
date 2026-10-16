@@ -1,0 +1,76 @@
+[     1.0s] EU/UK economies missing from the sample: none
+[     1.1s] intra-EU at-risk link-years: 9.6% of the panel; mean depth intra-EU = 3.43, other FTA links = 1.18
+[     1.8s] split_group0: n = 2,292,641
+[     7.0s]   demeaned ['y_survive', 'gf', 'gd', 'f', 'd', 'l'] in 5.0s (split_group0)
+[     8.1s] split_group1: n = 1,636,724
+[    11.6s]   demeaned ['y_survive', 'gf', 'gd', 'f', 'd', 'l'] in 3.5s (split_group1)
+[    12.6s] split_group2: n = 1,707,308
+[    17.0s]   demeaned ['y_survive', 'gf', 'gd', 'f', 'd', 'l'] in 4.3s (split_group2)
+[    18.0s] split_group3: n = 2,079,428
+[    28.7s]   demeaned ['y_survive', 'gf', 'gd', 'f', 'd', 'l'] in 10.5s (split_group3)
+[    31.6s] s3c_group_specific_time_fe: n = 8,045,130
+[    58.0s]   demeaned ['y_survive', 'l'] in 26.2s (s3c_group_specific_time_fe)
+[    98.1s]   demeaned ['gd_b0', 'gf_b0', 'd_b0', 'f_b0'] in 39.7s (s3c_group_specific_time_fe)
+[   141.7s]   demeaned ['gd_b1', 'gf_b1', 'd_b1', 'f_b1'] in 43.2s (s3c_group_specific_time_fe)
+[   186.5s]   demeaned ['gd_b2', 'gf_b2', 'd_b2', 'f_b2'] in 44.4s (s3c_group_specific_time_fe)
+[   233.3s]   demeaned ['gd_b3', 'gf_b3', 'd_b3', 'f_b3'] in 46.4s (s3c_group_specific_time_fe)
+[   243.3s] s3_excl2022: n = 7,474,966
+[   246.9s]   demeaned ['y_survive', 'l'] in 3.4s (s3_excl2022)
+[   254.2s]   demeaned ['gd_b0', 'gf_b0', 'd_b0', 'f_b0'] in 7.0s (s3_excl2022)
+[   264.2s]   demeaned ['gd_b1', 'gf_b1', 'd_b1', 'f_b1', 'b1', 'g_b1'] in 9.4s (s3_excl2022)
+[   273.5s]   demeaned ['gd_b2', 'gf_b2', 'd_b2', 'f_b2', 'b2', 'g_b2'] in 8.7s (s3_excl2022)
+[   282.9s]   demeaned ['gd_b3', 'gf_b3', 'd_b3', 'f_b3', 'b3', 'g_b3'] in 8.9s (s3_excl2022)
+[   293.9s] s3_excl_intra_eu: n = 7,255,127
+[   297.6s]   demeaned ['y_survive', 'l'] in 3.4s (s3_excl_intra_eu)
+[   304.2s]   demeaned ['gd_b0', 'gf_b0', 'd_b0', 'f_b0'] in 6.4s (s3_excl_intra_eu)
+[   314.1s]   demeaned ['gd_b1', 'gf_b1', 'd_b1', 'f_b1', 'b1', 'g_b1'] in 9.4s (s3_excl_intra_eu)
+[   323.6s]   demeaned ['gd_b2', 'gf_b2', 'd_b2', 'f_b2', 'b2', 'g_b2'] in 8.9s (s3_excl_intra_eu)
+[   333.5s]   demeaned ['gd_b3', 'gf_b3', 'd_b3', 'f_b3', 'b3', 'g_b3'] in 9.4s (s3_excl_intra_eu)
+[   344.4s] model5_excl_intra_eu: n = 7,255,127
+[   354.0s]   demeaned ['y_survive', 'gf', 'gd', 'f', 'd', 'l'] in 9.1s (model5_excl_intra_eu)
+[   355.6s]                                model inference term  estimate  std_error   t_value  p_value    ci_low  ci_high    df    nobs
+(e) Table 4 col 5 excluding intra-EU      pair   gf -0.000822   0.001188 -0.692088 0.488896 -0.003151 0.001507 11546 7255127
+(e) Table 4 col 5 excluding intra-EU      pair   gd -0.001174   0.000833 -1.410075 0.158544 -0.002806 0.000458 11546 7255127
+(e) Table 4 col 5 excluding intra-EU pair_year   gf -0.000822   0.001799 -0.457033 0.654197 -0.004657 0.003013    15 7255127
+(e) Table 4 col 5 excluding intra-EU pair_year   gd -0.001174   0.001297 -0.905488 0.379522 -0.003938 0.001590    15 7255127
+[   355.6s]                          model inference    group  exit_rate  theta_pp  theta_se_pp  theta_p  relative_pct  relative_se_pct  relative_p            n
+             (a) split samples      pair     <10k     0.3067   -0.3156       0.0984   0.0013        1.0292           0.3209      0.0013 2292641.0000
+             (a) split samples pair_year     <10k     0.3067   -0.3156       0.2474   0.2214        1.0292           0.8066      0.2214 2292641.0000
+             (a) split samples      pair 10k-100k     0.1036   -0.0265       0.0707   0.7081        0.2554           0.6822      0.7081 1636724.0000
+             (a) split samples pair_year 10k-100k     0.1036   -0.0265       0.1153   0.8216        0.2554           1.1128      0.8216 1636724.0000
+             (a) split samples      pair  100k-1M     0.0313   -0.0251       0.0462   0.5860        0.8024           1.4731      0.5860 1707308.0000
+             (a) split samples pair_year  100k-1M     0.0313   -0.0251       0.0576   0.6687        0.8024           1.8380      0.6687 1707308.0000
+             (a) split samples      pair     >=1M     0.0087   -0.1442       0.0832   0.0831       16.4993           9.5194      0.0831 2079428.0000
+             (a) split samples pair_year     >=1M     0.0087   -0.1442       0.0551   0.0194       16.4993           6.3046      0.0194 2079428.0000
+(b) S3c group-specific time FE      pair     <10k     0.3128   -0.3284       0.0958   0.0006        1.0500           0.3062      0.0006          NaN
+(b) S3c group-specific time FE      pair 10k-100k     0.1273   -0.1114       0.0720   0.1218        0.8749           0.5654      0.1218          NaN
+(b) S3c group-specific time FE      pair  100k-1M     0.0433   -0.1335       0.0507   0.0085        3.0811           1.1708      0.0085          NaN
+(b) S3c group-specific time FE      pair     >=1M     0.0113   -0.1806       0.0803   0.0246       15.9390           7.0882      0.0246          NaN
+(b) S3c group-specific time FE pair_year     <10k     0.3128   -0.3284       0.2406   0.1923        1.0500           0.7692      0.1923          NaN
+(b) S3c group-specific time FE pair_year 10k-100k     0.1273   -0.1114       0.1236   0.3818        0.8749           0.9709      0.3818          NaN
+(b) S3c group-specific time FE pair_year  100k-1M     0.0433   -0.1335       0.0667   0.0639        3.0811           1.5401      0.0639          NaN
+(b) S3c group-specific time FE pair_year     >=1M     0.0113   -0.1806       0.0439   0.0009       15.9390           3.8760      0.0009          NaN
+         (c) S3 excluding 2022      pair     <10k     0.3119   -0.1041       0.1315   0.4287        0.3336           0.4215      0.4287          NaN
+         (c) S3 excluding 2022      pair 10k-100k     0.1271   -0.1819       0.0881   0.0390        1.4313           0.6932      0.0390          NaN
+         (c) S3 excluding 2022      pair  100k-1M     0.0430   -0.3566       0.0687   0.0000        8.2844           1.5960      0.0000          NaN
+         (c) S3 excluding 2022      pair     >=1M     0.0112   -0.5110       0.0664   0.0000       45.7039           5.9415      0.0000          NaN
+         (c) S3 excluding 2022 pair_year     <10k     0.3119   -0.1041       0.4320   0.8132        0.3336           1.3850      0.8132          NaN
+         (c) S3 excluding 2022 pair_year 10k-100k     0.1271   -0.1819       0.3059   0.5615        1.4313           2.4068      0.5615          NaN
+         (c) S3 excluding 2022 pair_year  100k-1M     0.0430   -0.3566       0.2941   0.2453        8.2844           6.8317      0.2453          NaN
+         (c) S3 excluding 2022 pair_year     >=1M     0.0112   -0.5110       0.2613   0.0708       45.7039          23.3691      0.0708          NaN
+     (d) S3 excluding intra-EU      pair     <10k     0.3201    0.3455       0.1204   0.0041       -1.0793           0.3760      0.0041          NaN
+     (d) S3 excluding intra-EU      pair 10k-100k     0.1327    0.0250       0.0968   0.7961       -0.1886           0.7297      0.7961          NaN
+     (d) S3 excluding intra-EU      pair  100k-1M     0.0466   -0.0851       0.0838   0.3101        1.8263           1.7993      0.3101          NaN
+     (d) S3 excluding intra-EU      pair     >=1M     0.0133   -0.1063       0.1123   0.3440        7.9638           8.4155      0.3440          NaN
+     (d) S3 excluding intra-EU pair_year     <10k     0.3201    0.3455       0.1442   0.0301       -1.0793           0.4506      0.0301          NaN
+     (d) S3 excluding intra-EU pair_year 10k-100k     0.1327    0.0250       0.1435   0.8640       -0.1886           1.0819      0.8640          NaN
+     (d) S3 excluding intra-EU pair_year  100k-1M     0.0466   -0.0851       0.1229   0.4994        1.8263           2.6386      0.4994          NaN
+     (d) S3 excluding intra-EU pair_year     >=1M     0.0133   -0.1063       0.0825   0.2172        7.9638           6.1826      0.2172          NaN
+[   355.6s]                          model inference  wald_equal_theta_p  theta_small_minus_large_pp  theta_small_minus_large_p  rho_small_minus_large_pct  rho_small_minus_large_p most_negative_group scenario
+(b) S3c group-specific time FE      pair              0.1620                     -0.1478                     0.2202                   -14.8890                   0.0353                <10k        C
+(b) S3c group-specific time FE pair_year              0.3359                     -0.1478                     0.5486                   -14.8890                   0.0016                <10k        C
+         (c) S3 excluding 2022      pair              0.0001                      0.4070                     0.0024                   -45.3702                   0.0000                >=1M        C
+         (c) S3 excluding 2022 pair_year              0.7195                      0.4070                     0.5104                   -45.3702                   0.0803                >=1M        C
+     (d) S3 excluding intra-EU      pair              0.0048                      0.4517                     0.0014                    -9.0431                   0.2774                >=1M        C
+     (d) S3 excluding intra-EU pair_year              0.1092                      0.4517                     0.0342                    -9.0431                   0.1771                >=1M        C
+[   355.6s] done

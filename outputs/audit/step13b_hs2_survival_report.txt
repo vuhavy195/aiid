@@ -1,0 +1,41 @@
+========================================================================================================
+AIID DTA–GPR PROJECT — STEP 13B HS2 TRADE-LINK SURVIVAL LPM
+========================================================================================================
+Project root: H:/AIID_DTA_GPR
+
+A. OUTCOME AND SAMPLE
+--------------------------------------------------------------------------------------------------------
+At-risk link-year rows: 8,219,579
+Mean survival probability: 84.944241%
+Pair-HS2 fixed-effect groups: 967,746
+Unordered-pair clusters: 12,436
+
+B. PRIMARY SIZE-ADJUSTED RESULTS
+--------------------------------------------------------------------------------------------------------
+GPR × FTA, pair clustered: beta=-0.004681, effect=-0.4681 percentage points, SE=0.000805, p=0.000000
+GPR × FTA, pair + year clustered: beta=-0.004681, effect=-0.4681 percentage points, SE=0.003680, p=0.222744
+GPR × depth, pair clustered: beta=-0.004180, effect=-0.4180 percentage points, SE=0.000397, p=0.000000
+GPR × depth, pair + year clustered: beta=-0.004180, effect=-0.4180 percentage points, SE=0.002140, p=0.069731
+
+C. JOINT SIZE-ADJUSTED MODEL — PAIR CLUSTERED
+--------------------------------------------------------------------------------------------------------
+GPR × FTA: beta=0.002816, effect=0.2816 percentage points, p=0.005718
+GPR × depth: beta=-0.005235, effect=-0.5235 percentage points, p=0.000000
+
+D. INTERPRETATION
+--------------------------------------------------------------------------------------------------------
+A positive interaction means the agreement variable raises the probability that an at-risk pair-HS2 link survives when global GPR rises by one standard deviation.
+A negative interaction means a higher probability of link exit under higher geopolitical risk.
+The depth coefficient is scaled to ten additional legally enforceable DTA policy areas.
+
+E. OUTPUT FILES
+--------------------------------------------------------------------------------------------------------
+outputs/audit/step13b_hs2_survival_report.txt
+outputs/audit/step13b_hs2_survival_input_audit.csv
+outputs/audit/step13b_hs2_survival_model_audit.csv
+outputs/tables/step13b_hs2_survival_interactions.csv
+outputs/tables/step13b_hs2_survival_all_coefficients.csv
+
+F. NEXT ACTION
+--------------------------------------------------------------------------------------------------------
+Send the report, interaction CSV and model-audit CSV to ChatGPT before running survival robustness checks.

@@ -1,0 +1,6 @@
+﻿Bundle,Estimate,SE,Full-bundle effect (%),Raw p-value,BH-FDR p-value,N
+Border coordination,0.0178,0.0213,1.797,0.4035,0.6726,"16,752,356"
+Digital and knowledge,0.0453,0.0338,4.63,0.1802,0.4505,"16,752,356"
+Environmental provisions,0.0384,0.0195,3.91,0.0489,0.2444,"16,752,356"
+Investment and production,0.0072,0.018,0.721,0.6905,0.7533,"16,752,356"
+Services and procurement,0.0059,0.0188,0.592,0.7533,0.7533,"16,752,356"

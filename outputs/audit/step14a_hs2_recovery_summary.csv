@@ -1,0 +1,2 @@
+﻿exit_events,one_year_available_events,two_year_available_events,reentry_rate_1y,reentry_rate_within_2y,full_recovery_rate_1y,full_recovery_rate_within_2y,pair_hs2_groups,unordered_pair_clusters,exit_years,minimum_exit_year,maximum_exit_year,invalid_core_rows,invalid_one_year_rows,invalid_two_year_rows
+1237520,1152080,1065382,0.34098673703215054,0.49721132889423697,0.17060794389278522,0.2814511602411154,658808,12431,16,2008,2023,0,0,0

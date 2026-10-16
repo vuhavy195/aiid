@@ -1,0 +1,12 @@
+statistic,value
+exit_events,1237520
+one_year_available_events,1152080
+two_year_available_events,1065382
+directed_pair_fe_groups,24182
+pair_hs2_fe_groups,658808
+unordered_pair_clusters,12431
+exit_years,16
+mean_active_fta_depth_units,1.23054449757219
+median_active_fta_depth_units,1.1
+mean_active_fta_provisions,12.3054449757219
+median_active_fta_provisions,11

@@ -1,0 +1,4 @@
+model,outcome_type,input_rows,estimation_rows,removed_rows,elapsed_seconds
+fta_only_trade_ppml,trade_value_ppml,6002016,5867439,134577,87.7
+fta_only_survival_no_size,survival_lpm,3539612,3479262,60350,5.09
+fta_only_survival_size_adjusted,survival_lpm,3539612,3479262,60350,5.41

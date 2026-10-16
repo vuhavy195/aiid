@@ -1,0 +1,26 @@
+[     0.4s] rows read: 8,219,579
+[     0.6s] max |gpr_x_fta - gpr*fta| = 0.000e+00; max |gpr_x_depth - gpr*depth| = 0.000e+00
+[     2.1s] kept after one-pass singleton removal: 8,045,131; iterative: 8,045,131
+[     2.1s] singleton rule matching fixest: one-pass
+[     3.3s] sample n = 8,045,131; FE levels = [793298, 2560, 2560, 1408]; pairs = 11,872; years = 16
+[     5.9s]               model inference               term_fixest    estimate  estimate_fixest   std_error  std_error_fixest     p_value  p_value_fixest  rel_diff_estimate  rel_diff_se  abs_diff_p    nobs  nobs_fixest
+depth_size_adjusted      pair  gpr_x_depth_strict_l1_10 -0.00417955      -0.00417955 0.000396514       0.000396514  7.2914e-26      7.2914e-26        5.52016e-14  3.52585e-10 2.85286e-33 8045131      8045131
+depth_size_adjusted      pair        depth_strict_l1_10  0.00442987       0.00442987 0.000797825       0.000797825 2.87776e-08     2.87776e-08        1.50373e-13  2.26256e-09 2.06324e-15 8045131      8045131
+depth_size_adjusted      pair log1p_trade_value_l1_musd   0.0157649        0.0157649 0.000385104       0.000385104           0               0        1.01894e-13  1.31991e-10           0 8045131      8045131
+depth_size_adjusted pair_year  gpr_x_depth_strict_l1_10 -0.00417955      -0.00417955  0.00214003        0.00214003   0.0697313       0.0697314        5.52016e-14  6.26454e-08  1.5672e-08 8045131      8045131
+depth_size_adjusted pair_year        depth_strict_l1_10  0.00442987       0.00442987  0.00172973        0.00172973   0.0217183       0.0217183        1.50373e-13  6.25057e-08 6.89881e-09 8045131      8045131
+depth_size_adjusted pair_year log1p_trade_value_l1_musd   0.0157649        0.0157649  0.00105838        0.00105838  2.1431e-10      2.1431e-10        1.01894e-13  6.28531e-08 1.90003e-16 8045131      8045131
+joint_size_adjusted      pair              gpr_x_fta_l1  0.00281599       0.00281599  0.00101881        0.00101881  0.00571844      0.00571844        6.91027e-13  3.63711e-10 1.75739e-11 8045131      8045131
+joint_size_adjusted      pair  gpr_x_depth_strict_l1_10 -0.00523476      -0.00523476 0.000493157       0.000493157 3.33277e-26     3.33277e-26        2.11589e-13   5.2002e-10 1.95015e-33 8045131      8045131
+joint_size_adjusted      pair             fta_active_l1  0.00304805       0.00304805  0.00274128        0.00274128    0.266199        0.266199        2.30908e-12  3.22195e-09 1.54153e-09 8045131      8045131
+joint_size_adjusted      pair        depth_strict_l1_10  0.00264137       0.00264137  0.00173185        0.00173185    0.127242        0.127242        1.52711e-12  4.16679e-09  1.5841e-09 8045131      8045131
+joint_size_adjusted      pair log1p_trade_value_l1_musd   0.0157693        0.0157693  0.00038521        0.00038521           0               0        8.97653e-14  1.46828e-10           0 8045131      8045131
+joint_size_adjusted pair_year              gpr_x_fta_l1  0.00281599       0.00281599  0.00153446        0.00153446   0.0863879        0.086388        6.91027e-13  5.34786e-08 1.52348e-08 8045131      8045131
+joint_size_adjusted pair_year  gpr_x_depth_strict_l1_10 -0.00523476      -0.00523476  0.00168414        0.00168414   0.0071945      0.00719451        2.11589e-13  6.47139e-08 2.95675e-09 8045131      8045131
+joint_size_adjusted pair_year             fta_active_l1  0.00304805       0.00304805  0.00435462        0.00435462    0.494666        0.494666        2.30908e-12  1.06832e-07 4.53736e-08 8045131      8045131
+joint_size_adjusted pair_year        depth_strict_l1_10  0.00264137       0.00264137  0.00319311        0.00319311    0.421083        0.421083        1.52711e-12  1.00719e-07 4.57568e-08 8045131      8045131
+joint_size_adjusted pair_year log1p_trade_value_l1_musd   0.0157693        0.0157693  0.00105407        0.00105407  2.0151e-10     2.01511e-10        8.97653e-14  6.25488e-08 1.77883e-16 8045131      8045131
+[     5.9s] max rel diff estimate = 2.31e-12 (tol 1e-06)
+[     5.9s] max rel diff SE       = 1.07e-07 (tol 0.002)
+[     5.9s] max abs diff p-value  = 4.58e-08
+[     5.9s] GATE: PASS

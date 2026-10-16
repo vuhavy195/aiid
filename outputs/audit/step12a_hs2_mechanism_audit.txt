@@ -1,0 +1,37 @@
+====================================================================================================
+AIID DTA–GPR PROJECT — STEP 12A HS2 MECHANISM PANEL
+====================================================================================================
+Project root: H:\AIID_DTA_GPR
+
+A. OUTPUT PANEL
+----------------------------------------------------------------------------------------------------
+Rows: 16,752,461
+Unordered-pair clusters: 12,454
+Years: 17
+Rows with missing mechanism values: 0
+Output Parquet size: 0.264 GB
+
+B. PRE-SPECIFIED MECHANISM BUNDLES
+----------------------------------------------------------------------------------------------------
+border_coordination: Customs, SPS, TBT
+investment_production: Investment, TRIMs, CompetitionPolicy, MovementofCapital
+digital_knowledge: DataProtection, InformationSociety, ResearchandTechnology, InnovationPolicies, IPR, TRIPs
+services_procurement: GATS, PublicProcurement
+environmental: EnvironmentalLaws
+
+C. INTERPRETATION
+----------------------------------------------------------------------------------------------------
+Each bundle_share_l1 ranges from 0 to 1 and equals the share of the pre-specified provisions that are legally enforceable in the previous year.
+Each gpr_x_<bundle>_share_l1 interaction combines a one-standard-deviation global GPR increase with a movement from none to all provisions in that bundle.
+Individual provision indicators and interactions are also retained for later FDR-controlled tests.
+
+D. OUTPUT FILES
+----------------------------------------------------------------------------------------------------
+data/processed/estimation_hs2_ppml_mechanisms.parquet
+outputs/audit/step12a_hs2_mechanism_audit.txt
+outputs/audit/step12a_mechanism_summary.csv
+outputs/audit/step12a_mechanism_correlations.csv
+
+E. NEXT ACTION
+----------------------------------------------------------------------------------------------------
+Send the report, summary and correlation CSVs to ChatGPT before estimating mechanism models.

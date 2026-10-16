@@ -1,0 +1,30 @@
+====================================================================================================
+AIID DTA–GPR PROJECT — STEP 10C FULL HS2 ROBUSTNESS PPML
+====================================================================================================
+Project root: H:/AIID_DTA_GPR
+
+A. JOINT FTA + DEPTH MODEL — PAIR-CLUSTERED
+----------------------------------------------------------------------------------------------------
+GPR × FTA: beta=-0.038236, SE=0.019206, p=0.046502, effect=-3.7514%
+GPR × depth: beta=0.009899, SE=0.009131, p=0.278330, effect=0.9948%
+
+B. ALTERNATIVE GPR MEASURES — DEPTH, PAIR-CLUSTERED
+----------------------------------------------------------------------------------------------------
+Threat component: beta=-0.004528, p=0.228372
+Act component: beta=0.001123, p=0.798410
+Annual peak: beta=-0.007723, p=0.237493
+
+C. EXCLUDING 2022 — PAIR-CLUSTERED
+----------------------------------------------------------------------------------------------------
+FTA interaction: beta=-0.024998, p=0.132488
+Depth interaction: beta=-0.002204, p=0.766870
+
+D. OUTPUT FILES
+----------------------------------------------------------------------------------------------------
+outputs/audit/step10c_hs2_robustness_report.txt
+outputs/audit/step10c_hs2_robustness_model_audit.csv
+outputs/tables/step10c_hs2_robustness_coefficients.csv
+
+E. NEXT ACTION
+----------------------------------------------------------------------------------------------------
+Send the report, coefficient CSV and model-audit CSV to ChatGPT before moving to HS2-sector heterogeneity.

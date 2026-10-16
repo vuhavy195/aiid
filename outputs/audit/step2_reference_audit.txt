@@ -1,0 +1,151 @@
+========================================================================================
+AIID DTA–GPR PROJECT — STEP 2 REFERENCE FILE AUDIT
+========================================================================================
+Project root: H:\AIID_DTA_GPR
+This script reads raw files only. It does not modify them.
+
+========================================================================================
+A. REQUIRED FILE CHECK
+========================================================================================
+COUNTRY    | FOUND   |      0.01 MB | H:\AIID_DTA_GPR\data\raw\baci_hs07_v202601\country_codes_V202601.csv
+PRODUCT    | FOUND   |      0.53 MB | H:\AIID_DTA_GPR\data\raw\baci_hs07_v202601\product_codes_HS07_V202601.csv
+BEC        | FOUND   |      3.76 MB | H:\AIID_DTA_GPR\data\raw\bec\HS2007_to_BEC4_correspondence.xls
+DTA        | FOUND   |     10.63 MB | H:\AIID_DTA_GPR\data\raw\dta_world_bank\DTA_1_Horizontal_Content_v2.xlsx
+GPR        | FOUND   |      2.58 MB | H:\AIID_DTA_GPR\data\raw\gpr\GPR_monthly_downloaded_2026-07-26.xls
+WTO        | FOUND   |      0.20 MB | H:\AIID_DTA_GPR\data\raw\wto_rta\WTO_all_RTAs.xlsx
+
+========================================================================================
+B. BACI COUNTRY METADATA
+========================================================================================
+Rows: 238
+Columns: ['country_code', 'country_name', 'country_iso2', 'country_iso3']
+Expected columns present: True
+Duplicate country_code rows: 0
+Rows involved in duplicated ISO3 codes: 6
+Rows with blank ISO2: 4
+Rows with non-standard ISO3 format: 3
+Historical entities identified by '(...)': 9
+Saved: outputs/audit/step2_country_metadata_issues.csv
+
+========================================================================================
+C. BACI HS2007 PRODUCT METADATA
+========================================================================================
+Rows: 5,050
+Columns: ['code', 'description']
+Duplicate HS6 rows: 0
+Invalid non-six-digit HS6 rows: 0
+Blank descriptions: 0
+Special code 999999 present: True
+Leading-zero test: True
+Saved: outputs/audit/step2_product_metadata_issues.csv
+
+========================================================================================
+D. HS2007 → BEC REV.4 CORRESPONDENCE
+========================================================================================
+BEC sheet names: ['HS2007-BEC', 'BEC4-HS2007', 'HS2007 - HS2002 - BEC Correlati', 'HS2007 - BEC correlation']
+  'HS2007-BEC': raw shape=(5099, 6), nonempty rows=5,096, nonempty cols=4
+  'BEC4-HS2007': raw shape=(5099, 6), nonempty rows=5,096, nonempty cols=4
+  'HS2007 - HS2002 - BEC Correlati': raw shape=(5675, 7), nonempty rows=5,671, nonempty cols=6
+  'HS2007 - BEC correlation': raw shape=(5058, 6), nonempty rows=5,055, nonempty cols=4
+  'HS2007-BEC': contains 'HS'=True; contains 'BEC'=True
+  'BEC4-HS2007': contains 'HS'=True; contains 'BEC'=True
+  'HS2007 - HS2002 - BEC Correlati': contains 'HS'=True; contains 'BEC'=True
+  'HS2007 - BEC correlation': contains 'HS'=True; contains 'BEC'=True
+BEC workbook opened successfully with xlrd.
+
+========================================================================================
+E. GEOPOLITICAL RISK WORKBOOK
+========================================================================================
+GPR sheet names: ['Sheet1']
+  'Sheet1': raw shape=(1519, 115), nonempty rows=1,519, nonempty cols=115
+  'Sheet1' keyword matches: ['month', 'GPR', 'GPRT', 'GPRA', 'GPRH', 'GPRHT', 'GPRHA', 'SHARE_GPR', 'SHARE_GPRH', 'GPRH_NOEW', 'GPR_NOEW', 'GPRH_AND', 'GPR_AND', 'GPRH_BASIC', 'GPR_BASIC', 'GPRC_ARG', 'GPRC_AUS', 'GPRC_BEL', 'GPRC_BRA', 'GPRC_CAN']
+GPR workbook opened successfully with xlrd.
+
+========================================================================================
+F. WORLD BANK DEEP TRADE AGREEMENTS
+========================================================================================
+Sheets: ['read me', 'WTO+ AC', 'WTO-X AC', 'WTO+ LE', 'WTO-X LE', 'Agreements', 'Bilateral Information']
+Missing expected sheets: []
+  'read me': 74 rows × 3 columns
+  'WTO+ AC': 391 rows × 17 columns
+  'WTO-X AC': 391 rows × 41 columns
+  'WTO+ LE': 391 rows × 17 columns
+  'WTO-X LE': 391 rows × 41 columns
+  'Agreements': 400 rows × 24 columns
+  'Bilateral Information': 294,165 rows × 9 columns
+Agreements: 400
+Agreement status counts: {'In Force': 381, 'Inactive': 16, 'In force for at least one Party': 2, 'Early Announcement': 1}
+Unique WB IDs in Agreements: 400
+Agreements without horizontal-content coding: 10
+WTO_plus LE provision columns: 14
+WTO_plus invalid LE coding values: []
+WTO_X LE provision columns: 38
+WTO_X invalid LE coding values: []
+
+========================================================================================
+ERROR WHILE AUDITING DTA WORKBOOK
+========================================================================================
+MergeError: Merge keys are not unique in either left or right dataset; not a one-to-one merge.
+Duplicates in left:
+  WBID      Agreement
+   23 EFTA - Türkiye ...
+Duplicates in right:
+  WBID      Agreement
+   23 EFTA - Türkiye ...
+Traceback (most recent call last):
+  File "H:\AIID_DTA_GPR\python\02_audit_reference_files.py", line 921, in main
+    function(report)
+    ~~~~~~~~^^^^^^^^
+  File "H:\AIID_DTA_GPR\python\02_audit_reference_files.py", line 678, in audit_dta
+    depth_summary = le_frames[0].merge(
+        le_frames[1],
+    ...<2 lines>...
+        validate="one_to_one",
+    )
+  File "C:\Users\HA VY\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\frame.py", line 12900, in merge
+    return merge(
+        self,
+    ...<10 lines>...
+        validate=validate,
+    )
+  File "C:\Users\HA VY\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\reshape\merge.py", line 385, in merge
+    op = _MergeOperation(
+        left_df,
+    ...<10 lines>...
+        validate=validate,
+    )
+  File "C:\Users\HA VY\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\reshape\merge.py", line 1037, in __init__
+    self._validate_validate_kwd(validate)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\HA VY\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\reshape\merge.py", line 1993, in _validate_validate_kwd
+    raise MergeError(
+    ...<4 lines>...
+    )
+pandas.errors.MergeError: Merge keys are not unique in either left or right dataset; not a one-to-one merge.
+Duplicates in left:
+  WBID      Agreement
+   23 EFTA - Türkiye ...
+Duplicates in right:
+  WBID      Agreement
+   23 EFTA - Türkiye ...
+
+
+========================================================================================
+G. WTO REGIONAL TRADE AGREEMENTS
+========================================================================================
+Sheets: ['AllRTAs', 'RTA Changes']
+AllRTAs rows: 660
+AllRTAs columns: 28
+Status counts: {'In Force': 407, 'Inactive': 213, 'Early announcement-Under negotiation': 29, 'Early announcement-Signed ': 6, 'In force for at least one Party': 5}
+Unique RTA IDs: 660
+Duplicate RTA IDs: 0
+Rows with Current signatories: 418
+Rows with Specific Entry/Exit dates: 111
+Saved: outputs/audit/step2_wto_status_summary.csv
+
+========================================================================================
+H. FINAL STEP 2 SUMMARY
+========================================================================================
+Reference-file audit finished.
+Send step2_reference_audit.txt and all step2_*.csv files to ChatGPT for review.
+Do not begin the BACI full-data audit until these outputs have been checked.

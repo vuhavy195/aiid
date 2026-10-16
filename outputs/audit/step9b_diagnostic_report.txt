@@ -1,0 +1,35 @@
+================================================================================================
+AIID DTA–GPR PROJECT — STEP 9B PILOT DIAGNOSTICS
+================================================================================================
+Project root: H:/AIID_DTA_GPR
+
+A. OUTCOME-SCALING CHECK
+------------------------------------------------------------------------------------------------
+Maximum absolute slope difference after converting trade from thousand USD to million USD: 0.000000000000
+Scaled pair-depth model log-likelihood: -7992384.1881
+A near-zero coefficient difference confirms that outcome scaling does not change the substantive slopes.
+
+B. COMMON-SHOCK INFERENCE CHECK
+------------------------------------------------------------------------------------------------
+Pair-depth, pair + year clustered: beta=-0.006946, SE=0.004907, p=0.156900
+DDD-depth, pair + year clustered: beta=-0.008333, SE=0.005308, p=0.116464
+Because global GPR is common across countries and only 17 years are available, year-cluster sensitivity is important but should not be treated as definitive.
+
+C. EXTREME-YEAR CHECK
+------------------------------------------------------------------------------------------------
+Pair-depth excluding 2022: beta=-0.006623, p=0.369034
+DDD-depth excluding 2022: beta=-0.012866, p=0.027164
+
+D. OUTPUT FILES
+------------------------------------------------------------------------------------------------
+outputs/audit/step9b_diagnostic_report.txt
+outputs/audit/step9b_treatment_support.csv
+outputs/tables/step9b_outcome_scaling_check.csv
+outputs/tables/step9b_vcov_sensitivity.csv
+outputs/tables/step9b_shock_sensitivity.csv
+outputs/tables/step9b_sample_sensitivity.csv
+outputs/models/step9b_scaled_pilot_models.rds
+
+E. NEXT ACTION
+------------------------------------------------------------------------------------------------
+Send the diagnostic report and the five CSV outputs to ChatGPT before running the full HS2 PPML.

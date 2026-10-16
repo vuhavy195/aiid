@@ -1,0 +1,66 @@
+================================================================================================================
+AIID DTA–GPR PROJECT — STEP 15C COUNTRY-SPECIFIC PAIR-GPR ROBUSTNESS
+================================================================================================================
+Project root: H:/AIID_DTA_GPR
+
+A. RESTRICTED SAMPLE
+----------------------------------------------------------------------------------------------------------------
+Trade-value rows: 2,520,781
+Link-survival rows: 1,885,368
+Unordered-pair clusters: 946
+The global-GPR benchmark is re-estimated in exactly the same restricted sample before country-GPR results are compared.
+
+B. PAIR-CLUSTERED RESULTS
+----------------------------------------------------------------------------------------------------------------
+survival_lpm | pair_average_country_gpr | shock_x_depth: beta=-0.001680, effect=-0.1680 percentage_points, p=0.000005
+survival_lpm | pair_average_country_gpr | shock_x_fta: beta=-0.000632, effect=-0.0632 percentage_points, p=0.682585
+survival_lpm | pair_log_average_country_gpr | shock_x_depth: beta=-0.001475, effect=-0.1475 percentage_points, p=0.000036
+survival_lpm | pair_log_average_country_gpr | shock_x_fta: beta=-0.001397, effect=-0.1397 percentage_points, p=0.358149
+survival_lpm | pair_maximum_country_gpr | shock_x_depth: beta=-0.002033, effect=-0.2033 percentage_points, p=0.000001
+survival_lpm | pair_maximum_country_gpr | shock_x_fta: beta=0.000682, effect=0.0682 percentage_points, p=0.625131
+survival_lpm | restricted_global_gpr | shock_x_depth: beta=-0.003839, effect=-0.3839 percentage_points, p=0.000000
+survival_lpm | restricted_global_gpr | shock_x_fta: beta=0.002933, effect=0.2933 percentage_points, p=0.058104
+trade_value_ppml | pair_average_country_gpr | shock_x_depth: beta=0.027958, effect=2.8352 percent, p=0.018038
+trade_value_ppml | pair_average_country_gpr | shock_x_fta: beta=-0.085248, effect=-8.1716 percent, p=0.006661
+trade_value_ppml | pair_log_average_country_gpr | shock_x_depth: beta=0.027715, effect=2.8103 percent, p=0.014139
+trade_value_ppml | pair_log_average_country_gpr | shock_x_fta: beta=-0.084312, effect=-8.0856 percent, p=0.004276
+trade_value_ppml | pair_maximum_country_gpr | shock_x_depth: beta=0.023986, effect=2.4276 percent, p=0.056001
+trade_value_ppml | pair_maximum_country_gpr | shock_x_fta: beta=-0.079626, effect=-7.6538 percent, p=0.015590
+trade_value_ppml | restricted_global_gpr | shock_x_depth: beta=0.016029, effect=1.6158 percent, p=0.174599
+trade_value_ppml | restricted_global_gpr | shock_x_fta: beta=-0.061697, effect=-5.9833 percent, p=0.007326
+
+C. PAIR + YEAR CLUSTERED RESULTS
+----------------------------------------------------------------------------------------------------------------
+survival_lpm | pair_average_country_gpr | shock_x_depth: beta=-0.001680, effect=-0.1680 percentage_points, p=0.000526
+survival_lpm | pair_average_country_gpr | shock_x_fta: beta=-0.000632, effect=-0.0632 percentage_points, p=0.759997
+survival_lpm | pair_log_average_country_gpr | shock_x_depth: beta=-0.001475, effect=-0.1475 percentage_points, p=0.001581
+survival_lpm | pair_log_average_country_gpr | shock_x_fta: beta=-0.001397, effect=-0.1397 percentage_points, p=0.472224
+survival_lpm | pair_maximum_country_gpr | shock_x_depth: beta=-0.002033, effect=-0.2033 percentage_points, p=0.000452
+survival_lpm | pair_maximum_country_gpr | shock_x_fta: beta=0.000682, effect=0.0682 percentage_points, p=0.744173
+survival_lpm | restricted_global_gpr | shock_x_depth: beta=-0.003839, effect=-0.3839 percentage_points, p=0.001359
+survival_lpm | restricted_global_gpr | shock_x_fta: beta=0.002933, effect=0.2933 percentage_points, p=0.080305
+trade_value_ppml | pair_average_country_gpr | shock_x_depth: beta=0.027958, effect=2.8352 percent, p=0.017541
+trade_value_ppml | pair_average_country_gpr | shock_x_fta: beta=-0.085248, effect=-8.1716 percent, p=0.007464
+trade_value_ppml | pair_log_average_country_gpr | shock_x_depth: beta=0.027715, effect=2.8103 percent, p=0.012331
+trade_value_ppml | pair_log_average_country_gpr | shock_x_fta: beta=-0.084312, effect=-8.0856 percent, p=0.004185
+trade_value_ppml | pair_maximum_country_gpr | shock_x_depth: beta=0.023986, effect=2.4276 percent, p=0.062134
+trade_value_ppml | pair_maximum_country_gpr | shock_x_fta: beta=-0.079626, effect=-7.6538 percent, p=0.018740
+trade_value_ppml | restricted_global_gpr | shock_x_depth: beta=0.016029, effect=1.6158 percent, p=0.143104
+trade_value_ppml | restricted_global_gpr | shock_x_fta: beta=-0.061697, effect=-5.9833 percent, p=0.004467
+
+D. INTERPRETATION RULE
+----------------------------------------------------------------------------------------------------------------
+First compare the restricted global-GPR benchmark with the full-sample baseline. Then compare country-specific pair-GPR estimates with that restricted benchmark.
+A change that already occurs in the restricted global benchmark reflects sample composition, not necessarily the alternative country-specific shock measure.
+One depth unit equals ten legally enforceable DTA policy areas.
+
+E. OUTPUT FILES
+----------------------------------------------------------------------------------------------------------------
+outputs/audit/step15c_country_gpr_report.txt
+outputs/audit/step15c_country_gpr_input_audit.csv
+outputs/audit/step15c_country_gpr_model_audit.csv
+outputs/tables/step15c_country_gpr_coefficients.csv
+
+F. NEXT ACTION
+----------------------------------------------------------------------------------------------------------------
+Send the report, input-audit CSV, model-audit CSV and coefficient CSV to ChatGPT. No additional empirical specifications should be added after this step.

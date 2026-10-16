@@ -1,0 +1,4 @@
+Primary classification (S3, two-way pair + year): scenario C
+Secondary (S3, pair clusters): scenario C
+Robustness (S3b, two-way): scenario C
+median depth among FTA links used for net effects: 1.40

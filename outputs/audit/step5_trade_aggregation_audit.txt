@@ -1,0 +1,45 @@
+============================================================================================
+AIID DTA–GPR PROJECT — STEP 5 TRADE AGGREGATION AUDIT
+============================================================================================
+Project root: H:\AIID_DTA_GPR
+Years processed: 2007–2023
+
+A. ANNUAL PROCESSING
+--------------------------------------------------------------------------------------------
+Years with PASS status: 17 of 17
+Raw BACI rows: 176,846,063
+Rows with both partners in the final sample: 165,462,919 (93.5632%)
+Trade-value share with both partners in the final sample: 99.426674%
+Trade-value share retained in clean intermediate, consumption or capital classes: 90.529944%
+Duplicate aggregate keys: 0
+
+B. CLEAN END-USE TRADE VALUES
+--------------------------------------------------------------------------------------------
+Intermediate share of selected-country trade: 57.185817%
+Consumption share of selected-country trade: 17.135031%
+Capital share of selected-country trade: 16.209096%
+
+C. POSITIVE AGGREGATE TABLES
+--------------------------------------------------------------------------------------------
+Pair–HS2–end-use–year positive rows: 18,215,975
+Intermediate pair–HS2–year positive rows: 8,792,803
+Consumption pair–HS2–year positive rows: 7,603,860
+Capital pair–HS2–year positive rows: 1,819,312
+Positive intermediate pair–year rows: 333,028
+Complete directed pair–year grid size: 432,480
+Share of directed pair–years with positive intermediate trade: 77.004255%
+
+D. OUTPUT FILES
+--------------------------------------------------------------------------------------------
+data/interim/trade_positive_pair_hs2_enduse_year.parquet
+data/interim/trade_positive_pair_hs2_year_intermediate.parquet
+data/interim/trade_positive_pair_year_intermediate.parquet
+outputs/audit/step5_annual_trade_filter_audit.csv
+outputs/audit/step5_hs2_enduse_universe.csv
+outputs/audit/step5_pair_year_intermediate_coverage.csv
+outputs/audit/step5_trade_aggregation_audit.txt
+
+E. IMPORTANT
+--------------------------------------------------------------------------------------------
+These are positive-flow aggregates only. Do not run the final PPML yet.
+Structural zeros will be created later, after the DTA pair-year treatment and GPR series have been constructed and checked.

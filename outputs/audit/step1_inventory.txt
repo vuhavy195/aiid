@@ -1,0 +1,113 @@
+================================================================================
+AIID PROJECT — STEP 1 RAW DATA INVENTORY
+================================================================================
+Project root: H:\AIID_DTA_GPR
+
+--------------------------------------------------------------------------------
+SOURCE: BACI HS2007
+Folder: H:\AIID_DTA_GPR\data\raw\baci_hs07_v202601
+STATUS: FOUND 21 FILE(S)
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2007_V202601.csv | 228.73 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2008_V202601.csv | 264.58 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2009_V202601.csv | 280.47 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2010_V202601.csv | 292.23 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2011_V202601.csv | 302.32 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2012_V202601.csv | 313.63 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2013_V202601.csv | 321.47 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2014_V202601.csv | 325.20 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2015_V202601.csv | 337.29 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2016_V202601.csv | 339.29 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2017_V202601.csv | 348.90 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2018_V202601.csv | 352.71 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2019_V202601.csv | 356.25 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2020_V202601.csv | 344.10 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2021_V202601.csv | 360.68 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2022_V202601.csv | 361.11 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2023_V202601.csv | 361.85 MB
+  data\raw\baci_hs07_v202601\BACI_HS07_Y2024_V202601.csv | 342.29 MB
+  data\raw\baci_hs07_v202601\country_codes_V202601.csv | 5.22 KB
+  data\raw\baci_hs07_v202601\product_codes_HS07_V202601.csv | 538.62 KB
+  data\raw\baci_hs07_v202601\Readme.txt | 571.00 B
+
+--------------------------------------------------------------------------------
+SOURCE: BEC Rev.4
+Folder: H:\AIID_DTA_GPR\data\raw\bec
+STATUS: FOUND 3 FILE(S)
+  data\raw\bec\BEC_all_codes_descriptions.xlsx | 20.43 KB
+  data\raw\bec\BEC_Rev4_manual.pdf | 2.55 MB
+  data\raw\bec\HS2007_to_BEC4_correspondence.xls | 3.76 MB
+
+--------------------------------------------------------------------------------
+SOURCE: World Bank DTA
+Folder: H:\AIID_DTA_GPR\data\raw\dta_world_bank
+STATUS: FOUND 1 FILE(S)
+  data\raw\dta_world_bank\DTA_1_Horizontal_Content_v2.xlsx | 10.63 MB
+
+--------------------------------------------------------------------------------
+SOURCE: WTO RTA
+Folder: H:\AIID_DTA_GPR\data\raw\wto_rta
+STATUS: FOUND 2 FILE(S)
+  data\raw\wto_rta\WTO_all_RTAs.xlsx | 201.00 KB
+  data\raw\wto_rta\WTO_RTA_user_guide.pdf | 182.96 KB
+
+--------------------------------------------------------------------------------
+SOURCE: GPR
+Folder: H:\AIID_DTA_GPR\data\raw\gpr
+STATUS: FOUND 1 FILE(S)
+  data\raw\gpr\GPR_monthly_downloaded_2026-07-26.xls | 2.58 MB
+
+--------------------------------------------------------------------------------
+SOURCE: CEPII GeoDist
+Folder: H:\AIID_DTA_GPR\data\raw\geodist
+STATUS: FOUND 2 FILE(S)
+  data\raw\geodist\dist_cepii.xls | 7.77 MB
+  data\raw\geodist\geo_cepii.xls | 143.00 KB
+
+================================================================================
+BACI HS2007 CHECK
+================================================================================
+Detected annual years: [2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+Detected release versions: ['202601']
+Missing years from 2007–2023: []
+BACI YEAR COVERAGE: PASS
+BACI VERSION: PASS — V202601 only
+Possible country metadata files:
+  data\raw\baci_hs07_v202601\country_codes_V202601.csv | 5.22 KB
+Possible HS2007 product metadata files:
+  data\raw\baci_hs07_v202601\product_codes_HS07_V202601.csv | 538.62 KB
+Possible BACI documentation files:
+  data\raw\baci_hs07_v202601\Readme.txt | 571.00 B
+
+================================================================================
+BEC REV.4 CHECK
+================================================================================
+Possible HS2007 → BEC Rev.4 correspondence files:
+  data\raw\bec\HS2007_to_BEC4_correspondence.xls | 3.76 MB
+Possible BEC Rev.4 manual or description files:
+  data\raw\bec\BEC_Rev4_manual.pdf | 2.55 MB
+  data\raw\bec\HS2007_to_BEC4_correspondence.xls | 3.76 MB
+BEC CORRESPONDENCE: FOUND
+
+================================================================================
+OTHER DATA SOURCES
+================================================================================
+World Bank DTA files:
+  data\raw\dta_world_bank\DTA_1_Horizontal_Content_v2.xlsx | 10.63 MB
+WTO RTA files:
+  data\raw\wto_rta\WTO_all_RTAs.xlsx | 201.00 KB
+  data\raw\wto_rta\WTO_RTA_user_guide.pdf | 182.96 KB
+GPR files:
+  data\raw\gpr\GPR_monthly_downloaded_2026-07-26.xls | 2.58 MB
+CEPII GeoDist files:
+  data\raw\geodist\dist_cepii.xls | 7.77 MB
+  data\raw\geodist\geo_cepii.xls | 143.00 KB
+
+================================================================================
+FINAL STEP 1 SUMMARY
+================================================================================
+ALL EXPECTED SOURCE FOLDERS CONTAIN FILES
+BACI CORE INVENTORY: PASS
+BEC REV.4 CORE INVENTORY: PASS
+
+NOTE: This step only checks whether files exist.
+File contents, columns, missing values and merge keys will be examined in Step 2.

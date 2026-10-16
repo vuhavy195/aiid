@@ -1,0 +1,5 @@
+inference,band,cov_gf_gd,zero_crossing_provisions,band_excludes_zero_from_provisions,p_below_0_10_from_provisions,band_above_zero_up_to_provisions
+pair,true covariance,-3.117028896337377e-07,5.3794028020844,8.48,8.0,1.75
+pair,zero covariance (published figure),0.0,5.3794028020844,9.59,8.870000000000001,1.55
+pair_year,true covariance,1.724872952552788e-06,5.3794028020844,31.709999999999997,21.28,
+pair_year,zero covariance (published figure),0.0,5.3794028020844,21.21,15.540000000000001,

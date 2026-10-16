@@ -1,0 +1,11 @@
+statistic,value
+rows_total,432480
+rows_baseline,432454
+rows_excluded_missing_lagged_depth,26
+structural_zero_rows_total,99452
+structural_zero_share_total,0.229957454679985
+unique_directed_pairs,25440
+unique_unordered_pairs,12720
+minimum_year,2007
+maximum_year,2023
+total_trade_value_1000usd,172718223096.665

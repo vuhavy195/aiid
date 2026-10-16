@@ -1,0 +1,62 @@
+[     0.0s] == Panel B: survival LPM
+[     0.3s] restricted survival panel: 1,885,368 rows, intra-EU share 10.7%
+[     0.7s] all 44 economies: n = 1,878,443
+[     2.4s]   demeaned ['y_survive', 'l', 'f', 'd', 'restricted_global_gpr_xf', 'restricted_global_gpr_xd'] in 1.5s (country_surv_all)
+[     3.2s]   demeaned ['pair_average_country_gpr_xf', 'pair_average_country_gpr_xd', 'pair_average_country_gpr_main'] in 0.8s (country_surv_all)
+[     3.6s]   pair_average_country_gpr: level term absorbed by the fixed effects (dropped, as fixest does)
+[     4.4s] excluding intra-EU: n = 1,676,377
+[     6.3s]   demeaned ['y_survive', 'l', 'f', 'd', 'restricted_global_gpr_xf', 'restricted_global_gpr_xd'] in 1.7s (country_surv_noeu)
+[     7.3s]   demeaned ['pair_average_country_gpr_xf', 'pair_average_country_gpr_xd', 'pair_average_country_gpr_main'] in 1.0s (country_surv_noeu)
+[     7.6s]   pair_average_country_gpr: level term absorbed by the fixed effects (dropped, as fixest does)
+[     8.0s] == Panel A: trade value PPML (pyfixest fepois)
+[     8.3s] restricted trade panel: 2,520,781 rows, intra-EU share 9.0%
+[    53.2s]   gate restricted_global_gpr shock_x_fta pair: est -0.061697 vs -0.061697 (rel 2.9e-13); SE 0.023007 vs 0.023007 (rel 1.2e-07)
+[    53.2s]   gate restricted_global_gpr shock_x_depth pair: est 0.016029 vs 0.016029 (rel 7.2e-14); SE 0.011807 vs 0.011807 (rel 7.8e-08)
+[   100.0s]   gate restricted_global_gpr shock_x_fta pair_year: est -0.061697 vs -0.061697 (rel 2.9e-13); SE 0.021700 vs 0.021700 (rel 8.6e-08)
+[   100.0s]   gate restricted_global_gpr shock_x_depth pair_year: est 0.016029 vs 0.016029 (rel 7.2e-14); SE 0.010946 vs 0.010946 (rel 4.2e-08)
+[   144.4s]   gate pair_average_country_gpr shock_x_fta pair: est -0.085248 vs -0.085248 (rel 1.9e-13); SE 0.031418 vs 0.031418 (rel 8.0e-08)
+[   144.4s]   gate pair_average_country_gpr shock_x_depth pair: est 0.027958 vs 0.027958 (rel 9.8e-14); SE 0.011822 vs 0.011822 (rel 7.3e-08)
+[   192.4s]   gate pair_average_country_gpr shock_x_fta pair_year: est -0.085248 vs -0.085248 (rel 1.9e-13); SE 0.031864 vs 0.031864 (rel 7.2e-08)
+[   192.4s]   gate pair_average_country_gpr shock_x_depth pair_year: est 0.027958 vs 0.027958 (rel 9.8e-14); SE 0.011771 vs 0.011771 (rel 5.5e-08)
+[   376.7s]             margin                    shock             sample inference          term  estimate  std_error  p_value    nobs
+    survival (LPM)    restricted_global_gpr   all 44 economies      pair   shock_x_fta  0.002933   0.001546 0.058104 1878443
+    survival (LPM)    restricted_global_gpr   all 44 economies      pair shock_x_depth -0.003839   0.000595 0.000000 1878443
+    survival (LPM)    restricted_global_gpr   all 44 economies pair_year   shock_x_fta  0.002933   0.001564 0.080305 1878443
+    survival (LPM)    restricted_global_gpr   all 44 economies pair_year shock_x_depth -0.003839   0.000979 0.001359 1878443
+    survival (LPM) pair_average_country_gpr   all 44 economies      pair   shock_x_fta -0.000632   0.001544 0.682585 1878443
+    survival (LPM) pair_average_country_gpr   all 44 economies      pair shock_x_depth -0.001680   0.000366 0.000005 1878443
+    survival (LPM) pair_average_country_gpr   all 44 economies pair_year   shock_x_fta -0.000632   0.002030 0.759997 1878443
+    survival (LPM) pair_average_country_gpr   all 44 economies pair_year shock_x_depth -0.001680   0.000383 0.000526 1878443
+    survival (LPM)    restricted_global_gpr excluding intra-EU      pair   shock_x_fta  0.000593   0.001566 0.704856 1676377
+    survival (LPM)    restricted_global_gpr excluding intra-EU      pair shock_x_depth -0.001221   0.000718 0.089163 1676377
+    survival (LPM)    restricted_global_gpr excluding intra-EU pair_year   shock_x_fta  0.000593   0.001831 0.750390 1676377
+    survival (LPM)    restricted_global_gpr excluding intra-EU pair_year shock_x_depth -0.001221   0.000786 0.141288 1676377
+    survival (LPM) pair_average_country_gpr excluding intra-EU      pair   shock_x_fta -0.001901   0.001517 0.210704 1676377
+    survival (LPM) pair_average_country_gpr excluding intra-EU      pair shock_x_depth -0.000373   0.000569 0.511664 1676377
+    survival (LPM) pair_average_country_gpr excluding intra-EU pair_year   shock_x_fta -0.001901   0.002105 0.380938 1676377
+    survival (LPM) pair_average_country_gpr excluding intra-EU pair_year shock_x_depth -0.000373   0.000534 0.495375 1676377
+trade value (PPML)    restricted_global_gpr   all 44 economies      pair   shock_x_fta -0.061697   0.023007 0.007326 2520781
+trade value (PPML)    restricted_global_gpr   all 44 economies      pair shock_x_depth  0.016029   0.011807 0.174599 2520781
+trade value (PPML)    restricted_global_gpr   all 44 economies pair_year   shock_x_fta -0.061697   0.021700 0.004467 2520781
+trade value (PPML)    restricted_global_gpr   all 44 economies pair_year shock_x_depth  0.016029   0.010946 0.143104 2520781
+trade value (PPML) pair_average_country_gpr   all 44 economies      pair   shock_x_fta -0.085248   0.031418 0.006661 2520781
+trade value (PPML) pair_average_country_gpr   all 44 economies      pair shock_x_depth  0.027958   0.011822 0.018038 2520781
+trade value (PPML) pair_average_country_gpr   all 44 economies pair_year   shock_x_fta -0.085248   0.031864 0.007464 2520781
+trade value (PPML) pair_average_country_gpr   all 44 economies pair_year shock_x_depth  0.027958   0.011771 0.017541 2520781
+trade value (PPML)    restricted_global_gpr excluding intra-EU      pair   shock_x_fta -0.056815   0.023402 0.015190 2294250
+trade value (PPML)    restricted_global_gpr excluding intra-EU      pair shock_x_depth  0.012176   0.012836 0.342835 2294250
+trade value (PPML)    restricted_global_gpr excluding intra-EU pair_year   shock_x_fta -0.056815   0.021013 0.006855 2294250
+trade value (PPML)    restricted_global_gpr excluding intra-EU pair_year shock_x_depth  0.012176   0.012883 0.344583 2294250
+trade value (PPML) pair_average_country_gpr excluding intra-EU      pair   shock_x_fta -0.096285   0.032875 0.003402 2294250
+trade value (PPML) pair_average_country_gpr excluding intra-EU      pair shock_x_depth  0.041330   0.014700 0.004931 2294250
+trade value (PPML) pair_average_country_gpr excluding intra-EU pair_year   shock_x_fta -0.096285   0.032168 0.002761 2294250
+trade value (PPML) pair_average_country_gpr excluding intra-EU pair_year shock_x_depth  0.041330   0.014071 0.003311 2294250
+[   376.7s] survival gate restricted_global_gpr shock_x_fta pair: est 0.002933 vs 0.002933; SE 0.001546 vs 0.001546; N 1,878,443 vs 1,878,443
+[   376.7s] survival gate restricted_global_gpr shock_x_fta pair_year: est 0.002933 vs 0.002933; SE 0.001564 vs 0.001564; N 1,878,443 vs 1,878,443
+[   376.7s] survival gate restricted_global_gpr shock_x_depth pair: est -0.003839 vs -0.003839; SE 0.000595 vs 0.000595; N 1,878,443 vs 1,878,443
+[   376.7s] survival gate restricted_global_gpr shock_x_depth pair_year: est -0.003839 vs -0.003839; SE 0.000979 vs 0.000979; N 1,878,443 vs 1,878,443
+[   376.7s] survival gate pair_average_country_gpr shock_x_fta pair: est -0.000632 vs -0.000632; SE 0.001544 vs 0.001544; N 1,878,443 vs 1,878,443
+[   376.7s] survival gate pair_average_country_gpr shock_x_fta pair_year: est -0.000632 vs -0.000632; SE 0.002030 vs 0.002030; N 1,878,443 vs 1,878,443
+[   376.7s] survival gate pair_average_country_gpr shock_x_depth pair: est -0.001680 vs -0.001680; SE 0.000366 vs 0.000366; N 1,878,443 vs 1,878,443
+[   376.7s] survival gate pair_average_country_gpr shock_x_depth pair_year: est -0.001680 vs -0.001680; SE 0.000383 vs 0.000383; N 1,878,443 vs 1,878,443
+[   376.7s] done

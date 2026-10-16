@@ -1,0 +1,9 @@
+outcome,fe_spec,input_rows,estimation_rows,removed_rows,elapsed_seconds
+reenter_1y,directed_pair_fe,1152080,1151310,770,2.02
+reenter_1y,pair_hs2_fe,1152080,839585,312495,2.49
+reenter_within_2y,directed_pair_fe,1065382,1064542,840,2.27
+reenter_within_2y,pair_hs2_fe,1065382,752846,312536,2.42
+full_recovery_1y,directed_pair_fe,1152080,1151310,770,2.42
+full_recovery_1y,pair_hs2_fe,1152080,839585,312495,2.55
+full_recovery_within_2y,directed_pair_fe,1065382,1064542,840,2.46
+full_recovery_within_2y,pair_hs2_fe,1065382,752846,312536,2.58

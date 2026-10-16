@@ -1,0 +1,42 @@
+======================================================================================================
+AIID DTA–GPR PROJECT — STEP 14A POST-EXIT RECOVERY PANEL
+======================================================================================================
+Project root: H:\AIID_DTA_GPR
+
+A. EVENT DEFINITION
+------------------------------------------------------------------------------------------------------
+An exit event occurs when a pair-HS2 link traded positively in t-1 and records zero trade in t.
+
+B. PANEL AUDIT
+------------------------------------------------------------------------------------------------------
+Exit events: 1,237,520
+Events with one-year follow-up: 1,152,080
+Events with two-year follow-up: 1,065,382
+One-year re-entry rate: 34.098674%
+Re-entry rate within two years: 49.721133%
+Full recovery rate within one year: 17.060794%
+Full recovery rate within two years: 28.145116%
+Pair-HS2 groups with at least one exit: 658,808
+Unordered-pair clusters: 12,431
+Exit years: 2008–2023
+Output Parquet size: 0.037 GB
+
+C. OUTCOMES FOR THE NEXT ESTIMATION STEP
+------------------------------------------------------------------------------------------------------
+reenter_1y
+reenter_within_2y
+full_recovery_1y
+full_recovery_within_2y
+log_recovery_gap_1y
+
+D. OUTPUT FILES
+------------------------------------------------------------------------------------------------------
+data/processed/estimation_hs2_post_exit_recovery.parquet
+outputs/audit/step14a_hs2_recovery_audit.txt
+outputs/audit/step14a_hs2_recovery_summary.csv
+outputs/audit/step14a_hs2_recovery_by_exit_year.csv
+outputs/audit/step14a_hs2_recovery_by_sector.csv
+
+E. NEXT ACTION
+------------------------------------------------------------------------------------------------------
+Send the audit report and three summary CSVs to ChatGPT before estimating recovery models.

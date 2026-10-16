@@ -1,0 +1,53 @@
+================================================================================================
+AIID DTA–GPR PROJECT — STEP 10A COMPACT HS2 DATA
+================================================================================================
+Project root: H:\AIID_DTA_GPR
+
+A. SOURCE PANEL
+------------------------------------------------------------------------------------------------
+Full pair-HS2-year rows: 16,754,554
+Rows unavailable for lagged-depth baseline: 2,093
+Baseline rows retained: 16,752,461
+
+B. COMPACT OUTPUT
+------------------------------------------------------------------------------------------------
+Rows: 16,752,461
+Structural-zero rows: 7,961,379 (47.523638%)
+Pair-HS2 fixed-effect groups: 985,562
+Exporter-year fixed-effect groups: 2,720
+Importer-year fixed-effect groups: 2,720
+HS2-year fixed-effect groups: 1,496
+Unordered-pair clusters represented in the HS2 support panel: 12,454
+Full 160-economy universe contains 12,720 unordered pairs, but pairs with no positive intermediate HS2 trade in all years do not enter the pair-HS2 support panel.
+Total intermediate trade value (million USD): 172,600,374.3182
+Compact Parquet size: 0.189 GB
+
+C. VARIABLES
+------------------------------------------------------------------------------------------------
+trade_value_musd
+year
+hs2
+structural_zero
+fta_active_l1
+depth_strict_l1_10
+gpr_x_fta_l1
+gpr_x_depth_strict_l1_10
+log_gpr_x_depth_strict_l1_10
+threat_gpr_x_depth_strict_l1_10
+act_gpr_x_depth_strict_l1_10
+max_gpr_x_depth_strict_l1_10
+pair_hs2_fe_id
+exporter_year_fe_id
+importer_year_fe_id
+hs2_year_fe_id
+unordered_pair_cluster_id
+
+D. OUTPUT FILES
+------------------------------------------------------------------------------------------------
+data/processed/estimation_hs2_ppml_compact.parquet
+outputs/audit/step10a_compact_hs2_audit.txt
+outputs/audit/step10a_compact_hs2_summary.csv
+
+E. NEXT ACTION
+------------------------------------------------------------------------------------------------
+Send the audit report and summary CSV to ChatGPT before running the full R PPML.

@@ -1,0 +1,59 @@
+========================================================================================
+AIID DTA–GPR PROJECT — STEP 2B CORRECTED DTA AUDIT
+========================================================================================
+Project root: H:\AIID_DTA_GPR
+This script reads the raw DTA workbook only. It does not modify the original file.
+
+========================================================================================
+A. READ DTA SHEETS
+========================================================================================
+Agreements: 400 rows
+WTO+ LE: 391 rows
+WTO-X LE: 391 rows
+Bilateral Information: 294,165 rows
+RTA ID uniqueness check: PASS in all three sheets
+
+========================================================================================
+B. CONSTRUCT LEGALLY ENFORCEABLE DEPTH
+========================================================================================
+WTO+ provision areas: 14
+WTO-X provision areas: 38
+Total policy areas: 52
+WTO+ LE invalid coding values: []
+WTO-X LE invalid coding values: []
+
+========================================================================================
+C. RECONCILE RTAID AND WBID
+========================================================================================
+Agreements matched to content by RTAID: 391
+Agreements without content coding: 9
+Identifier/name mismatch rows: 1
+Mismatch details:
+  RTAID=1176; agreement_WBID=393; content_WBID_plus=23.0; content_WBID_x=23.0; name=EFTA - Türkiye
+
+========================================================================================
+D. AUDIT BILATERAL INFORMATION
+========================================================================================
+Rows: 294,165
+Year range: 1958.0 to 2023.0
+Rows with missing year: 216
+Exact duplicate rows: 0
+Duplicate iso1–iso2–WBID–year keys: 0
+Rows in 2007–2023: 190,289
+Unique agreements in 2007–2023: 391
+Unique directed country pairs in 2007–2023: 11,780
+WBIDs in Bilateral Information not found in Agreements: []
+2007–2023 bilateral rows linked to an agreement: 190,289 of 190,289
+2007–2023 bilateral rows whose active agreement has no content coding: 50
+
+========================================================================================
+E. FINAL RESULT
+========================================================================================
+Corrected DTA audit completed successfully.
+The agreement-content merge is performed by WTO RTAID, not by WBID plus agreement name.
+The final WBID is taken from the Agreements sheet for later linkage to Bilateral Information.
+Files created:
+  outputs/audit/step2b_dta_depth_summary_corrected.csv
+  outputs/audit/step2b_dta_agreements_missing_content.csv
+  outputs/audit/step2b_dta_identifier_mismatches.csv
+  outputs/audit/step2b_dta_bilateral_missing_year.csv

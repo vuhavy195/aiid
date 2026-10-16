@@ -1,0 +1,51 @@
+========================================================================================================
+AIID DTA–GPR PROJECT — STEP 12B DTA MECHANISM-BUNDLE PPML
+========================================================================================================
+Project root: H:/AIID_DTA_GPR
+
+A. MODEL DESIGN
+--------------------------------------------------------------------------------------------------------
+Standalone models estimate the total association of each provision bundle with the GPR response.
+FTA-conditional models include FTA membership and its GPR interaction, so the bundle coefficient measures incremental agreement composition beyond membership.
+All five bundles are NOT entered jointly because the bundle correlations are high.
+
+B. PAIR-CLUSTERED RESULTS
+--------------------------------------------------------------------------------------------------------
+conditional_on_fta | Services and procurement: beta=0.005906, full-bundle effect=0.592%, 10pp effect=0.059%, p=0.763417, BH-FDR p=0.768694
+conditional_on_fta | Investment and production: beta=0.007181, full-bundle effect=0.721%, 10pp effect=0.072%, p=0.768694, BH-FDR p=0.768694
+conditional_on_fta | Border coordination: beta=0.017814, full-bundle effect=1.797%, 10pp effect=0.178%, p=0.438359, BH-FDR p=0.730598
+conditional_on_fta | Environmental provisions: beta=0.038358, full-bundle effect=3.910%, 10pp effect=0.384%, p=0.026459, BH-FDR p=0.132297
+conditional_on_fta | Digital and knowledge: beta=0.045261, full-bundle effect=4.630%, 10pp effect=0.454%, p=0.220402, BH-FDR p=0.551004
+standalone_bundle | Investment and production: beta=-0.025005, full-bundle effect=-2.469%, 10pp effect=-0.250%, p=0.119848, BH-FDR p=0.399456
+standalone_bundle | Digital and knowledge: beta=-0.021621, full-bundle effect=-2.139%, 10pp effect=-0.216%, p=0.375720, BH-FDR p=0.469650
+standalone_bundle | Services and procurement: beta=-0.020092, full-bundle effect=-1.989%, 10pp effect=-0.201%, p=0.159782, BH-FDR p=0.399456
+standalone_bundle | Border coordination: beta=-0.013704, full-bundle effect=-1.361%, 10pp effect=-0.137%, p=0.307186, BH-FDR p=0.469650
+standalone_bundle | Environmental provisions: beta=0.005168, full-bundle effect=0.518%, 10pp effect=0.052%, p=0.716791, BH-FDR p=0.716791
+
+C. PAIR + YEAR CLUSTERED RESULTS
+--------------------------------------------------------------------------------------------------------
+conditional_on_fta | Services and procurement: beta=0.005906, p=0.753280, BH-FDR p=0.753280
+conditional_on_fta | Investment and production: beta=0.007181, p=0.690452, BH-FDR p=0.753280
+conditional_on_fta | Border coordination: beta=0.017814, p=0.403539, BH-FDR p=0.672566
+conditional_on_fta | Environmental provisions: beta=0.038358, p=0.048885, BH-FDR p=0.244423
+conditional_on_fta | Digital and knowledge: beta=0.045261, p=0.180184, BH-FDR p=0.450459
+standalone_bundle | Investment and production: beta=-0.025005, p=0.067741, BH-FDR p=0.278236
+standalone_bundle | Digital and knowledge: beta=-0.021621, p=0.301839, BH-FDR p=0.377299
+standalone_bundle | Services and procurement: beta=-0.020092, p=0.111294, BH-FDR p=0.278236
+standalone_bundle | Border coordination: beta=-0.013704, p=0.285387, BH-FDR p=0.377299
+standalone_bundle | Environmental provisions: beta=0.005168, p=0.704270, BH-FDR p=0.704270
+
+D. INTERPRETATION RULE
+--------------------------------------------------------------------------------------------------------
+Emphasize a mechanism only when its direction is stable across both clustering methods and it survives BH-FDR adjustment in the FTA-conditional specification.
+A positive interaction indicates a potential buffering channel; a negative interaction indicates greater sensitivity under higher GPR.
+
+E. OUTPUT FILES
+--------------------------------------------------------------------------------------------------------
+outputs/audit/step12b_mechanism_bundle_report.txt
+outputs/audit/step12b_mechanism_bundle_model_audit.csv
+outputs/tables/step12b_mechanism_bundle_coefficients.csv
+
+F. NEXT ACTION
+--------------------------------------------------------------------------------------------------------
+Send the report, coefficient CSV and model-audit CSV to ChatGPT before running individual-provision tests.

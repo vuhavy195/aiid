@@ -1,0 +1,91 @@
+==============================================================================================
+AIID DTA–GPR PROJECT — STEP 9 R PILOT PPML
+==============================================================================================
+Project root: H:/AIID_DTA_GPR
+
+A. DATA CHECK
+----------------------------------------------------------------------------------------------
+Pair-year rows: 432,480
+Pair-year baseline rows: 432,454
+Excluded pair-year rows with incomplete lagged depth: 26
+DDD rows: 864,960
+DDD baseline rows: 864,908
+
+B. PILOT MODEL PURPOSE
+----------------------------------------------------------------------------------------------
+The pair-year models test whether FTA existence and legally enforceable DTA depth condition the trade response to global geopolitical risk.
+The DDD models compare intermediate and consumption goods within the same directed pair-year.
+
+C. IMPORTANT INTERACTION COEFFICIENTS
+----------------------------------------------------------------------------------------------
+ddd_depth | ddd_gpr_depth_intermediate | beta=-0.008333 | SE=0.003387 | p=0.013894 | exp(beta)-1=-0.8298%
+ddd_fta | ddd_gpr_fta_intermediate | beta=-0.034930 | SE=0.010046 | p=0.000507 | exp(beta)-1=-3.4327%
+pair_both | gpr_x_depth_strict_l1_10 | beta=0.009458 | SE=0.009293 | p=0.308770 | exp(beta)-1=0.9503%
+pair_both | gpr_x_fta_l1 | beta=-0.041970 | SE=0.019437 | p=0.030829 | exp(beta)-1=-4.1102%
+pair_depth | gpr_x_depth_strict_l1_10 | beta=-0.006946 | SE=0.005352 | p=0.194284 | exp(beta)-1=-0.6922%
+pair_fta | gpr_x_fta_l1 | beta=-0.028062 | SE=0.011166 | p=0.011965 | exp(beta)-1=-2.7672%
+
+D. INFERENCE NOTE
+----------------------------------------------------------------------------------------------
+Pilot standard errors are clustered by unordered bilateral pair, giving both trade directions the same cluster.
+Final inference will add sensitivity checks for common year-level shocks and the full pair–HS2 specification.
+
+E. OUTPUT FILES
+----------------------------------------------------------------------------------------------
+outputs/audit/step9_r_pilot_report.txt
+outputs/audit/step9_pair_year_r_audit.csv
+outputs/audit/step9_ddd_r_audit.csv
+outputs/tables/step9_pair_year_ppml.csv
+outputs/tables/step9_ddd_ppml.csv
+outputs/tables/step9_pilot_coefficients.csv
+outputs/figures/step9_pilot_interaction_coefficients.png
+outputs/models/step9_pilot_ppml_models.rds
+
+F. NEXT ACTION
+----------------------------------------------------------------------------------------------
+Send the pilot report, coefficient CSV, pair-year table, DDD table, and coefficient figure to ChatGPT.
+Do not run the 16.75-million-row HS2 model until these pilot estimates and any separation warnings are reviewed.
+
+R SESSION INFORMATION
+----------------------------------------------------------------------------------------------
+R version 4.6.1 (2026-06-24 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26200)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=English_United States.utf8 
+[2] LC_CTYPE=English_United States.utf8   
+[3] LC_MONETARY=English_United States.utf8
+[4] LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.utf8    
+
+time zone: Asia/Bangkok
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] ggplot2_4.0.3     fixest_0.14.2     data.table_1.18.4 arrow_25.0.0     
+
+loaded via a namespace (and not attached):
+ [1] Matrix_1.7-5        bit_4.6.0           gtable_0.3.6       
+ [4] dplyr_1.2.1         compiler_4.6.1      tidyselect_1.2.1   
+ [7] Rcpp_1.1.2          assertthat_0.2.1    textshaping_1.0.5  
+[10] systemfonts_1.3.2   splines_4.6.1       scales_1.4.0       
+[13] lattice_0.22-9      TH.data_1.1-5       R6_2.6.1           
+[16] labeling_0.4.3      generics_0.1.4      Formula_1.2-5      
+[19] MASS_7.3-65         tibble_3.3.1        pillar_1.11.1      
+[22] RColorBrewer_1.1-3  tzdb_0.5.0          rlang_1.3.0        
+[25] multcomp_1.4-31     S7_0.2.2            stringmagic_1.2.0  
+[28] bit64_4.8.2         estimability_2.0.0  cli_3.6.6          
+[31] withr_3.0.3         magrittr_2.0.5      emmeans_2.0.4      
+[34] grid_4.6.1          mvtnorm_1.4-2       xtable_1.8-8       
+[37] sandwich_3.1-2      lifecycle_1.0.5     nlme_3.1-169       
+[40] vctrs_0.7.3         glue_1.8.1          farver_2.1.2       
+[43] numDeriv_2016.8-1.1 ragg_1.5.2          codetools_0.2-20   
+[46] zoo_1.8-15          survival_3.8-6      dreamerr_1.5.0     
+[49] purrr_1.2.2         pkgconfig_2.0.3     tools_4.6.1        

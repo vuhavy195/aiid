@@ -1,0 +1,33 @@
+margin,shock,sample,inference,term,estimate,std_error,p_value,nobs
+survival (LPM),restricted_global_gpr,all 44 economies,pair,shock_x_fta,0.002933117077763886,0.001546013647481967,0.05810447687391786,1878443
+survival (LPM),restricted_global_gpr,all 44 economies,pair,shock_x_depth,-0.003838779669105525,0.0005952207483803473,1.7902577928144032e-10,1878443
+survival (LPM),restricted_global_gpr,all 44 economies,pair_year,shock_x_fta,0.002933117077763886,0.0015637992956074197,0.08030539971397502,1878443
+survival (LPM),restricted_global_gpr,all 44 economies,pair_year,shock_x_depth,-0.003838779669105525,0.0009787719226923904,0.0013587781690163477,1878443
+survival (LPM),pair_average_country_gpr,all 44 economies,pair,shock_x_fta,-0.0006316749760624321,0.0015441925351613141,0.6825847188903742,1878443
+survival (LPM),pair_average_country_gpr,all 44 economies,pair,shock_x_depth,-0.0016801278545437919,0.00036625008400927847,5.092541323870359e-06,1878443
+survival (LPM),pair_average_country_gpr,all 44 economies,pair_year,shock_x_fta,-0.0006316749760624321,0.0020303770749708224,0.7599970832597217,1878443
+survival (LPM),pair_average_country_gpr,all 44 economies,pair_year,shock_x_depth,-0.0016801278545437919,0.00038258855486098767,0.0005258107397212231,1878443
+survival (LPM),restricted_global_gpr,excluding intra-EU,pair,shock_x_fta,0.0005932807436757863,0.0015658113393168852,0.7048560790229114,1676377
+survival (LPM),restricted_global_gpr,excluding intra-EU,pair,shock_x_depth,-0.0012210003599160653,0.0007175120550629995,0.08916260266412475,1676377
+survival (LPM),restricted_global_gpr,excluding intra-EU,pair_year,shock_x_fta,0.0005932807436757863,0.001830945336227619,0.7503897131926679,1676377
+survival (LPM),restricted_global_gpr,excluding intra-EU,pair_year,shock_x_depth,-0.0012210003599160653,0.000786269968624196,0.14128755063145676,1676377
+survival (LPM),pair_average_country_gpr,excluding intra-EU,pair,shock_x_fta,-0.0019005090240681842,0.0015173152860595228,0.21070367217493394,1676377
+survival (LPM),pair_average_country_gpr,excluding intra-EU,pair,shock_x_depth,-0.0003733344693884246,0.0005686597414057749,0.511663722323617,1676377
+survival (LPM),pair_average_country_gpr,excluding intra-EU,pair_year,shock_x_fta,-0.0019005090240681842,0.0021052943660598133,0.3809381855129259,1676377
+survival (LPM),pair_average_country_gpr,excluding intra-EU,pair_year,shock_x_depth,-0.0003733344693884246,0.0005342573253911516,0.4953751969574332,1676377
+trade value (PPML),restricted_global_gpr,all 44 economies,pair,shock_x_fta,-0.0616974631537509,0.02300738636572672,0.007326286545947354,2520781
+trade value (PPML),restricted_global_gpr,all 44 economies,pair,shock_x_depth,0.016028668456160248,0.011806851927513944,0.17459907899659743,2520781
+trade value (PPML),restricted_global_gpr,all 44 economies,pair_year,shock_x_fta,-0.0616974631537509,0.021700338829109385,0.00446691063300445,2520781
+trade value (PPML),restricted_global_gpr,all 44 economies,pair_year,shock_x_depth,0.016028668456160248,0.010946068375559809,0.14310350086551007,2520781
+trade value (PPML),pair_average_country_gpr,all 44 economies,pair,shock_x_fta,-0.08524805164024965,0.03141839753923343,0.006661348071828065,2520781
+trade value (PPML),pair_average_country_gpr,all 44 economies,pair,shock_x_depth,0.027957904949783934,0.01182232000214699,0.01803782182761306,2520781
+trade value (PPML),pair_average_country_gpr,all 44 economies,pair_year,shock_x_fta,-0.08524805164024965,0.031863729544685075,0.007464132734250927,2520781
+trade value (PPML),pair_average_country_gpr,all 44 economies,pair_year,shock_x_depth,0.027957904949783934,0.011770879846566048,0.017540609911692373,2520781
+trade value (PPML),restricted_global_gpr,excluding intra-EU,pair,shock_x_fta,-0.056815454629517516,0.02340188574257446,0.015190079778158816,2294250
+trade value (PPML),restricted_global_gpr,excluding intra-EU,pair,shock_x_depth,0.012176243809027647,0.012836293919031617,0.3428345791992714,2294250
+trade value (PPML),restricted_global_gpr,excluding intra-EU,pair_year,shock_x_fta,-0.056815454629517516,0.021013017488134878,0.0068547040337923635,2294250
+trade value (PPML),restricted_global_gpr,excluding intra-EU,pair_year,shock_x_depth,0.012176243809027647,0.012882898593442422,0.3445834031817967,2294250
+trade value (PPML),pair_average_country_gpr,excluding intra-EU,pair,shock_x_fta,-0.09628498568172753,0.03287484176467761,0.0034023502901931253,2294250
+trade value (PPML),pair_average_country_gpr,excluding intra-EU,pair,shock_x_depth,0.041329520018600935,0.01470009979715603,0.004930911544184132,2294250
+trade value (PPML),pair_average_country_gpr,excluding intra-EU,pair_year,shock_x_fta,-0.09628498568172753,0.032168141770909243,0.0027608835250170012,2294250
+trade value (PPML),pair_average_country_gpr,excluding intra-EU,pair_year,shock_x_depth,0.041329520018600935,0.014070650894914735,0.00331099043898686,2294250

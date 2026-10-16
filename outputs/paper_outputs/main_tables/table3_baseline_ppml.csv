@@ -1,0 +1,18 @@
+﻿Variable,(1) FTA interaction,(2) Depth interaction,(3) Joint FTA + depth
+GPR x DTA depth,—,"-0.0053
+(0.0047)
+[-0.53%]","0.0099
+(0.0078)
+[+0.99%]"
+GPR x FTA,"-0.0241**
+(0.0107)
+[-2.38%]",—,"-0.0382**
+(0.0171)
+[-3.75%]"
+FTA level term,Included,—,Included
+DTA-depth level term,—,Included,Included
+Pair-HS2 fixed effects,Yes,Yes,Yes
+Exporter-year fixed effects,Yes,Yes,Yes
+Importer-year fixed effects,Yes,Yes,Yes
+HS2-year fixed effects,Yes,Yes,Yes
+Observations,"16,752,356","16,752,356","16,752,356"

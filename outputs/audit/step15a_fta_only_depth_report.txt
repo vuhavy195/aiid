@@ -1,0 +1,31 @@
+========================================================================================================
+AIID DTA–GPR PROJECT — STEP 15A FTA-ONLY DEPTH ROBUSTNESS
+========================================================================================================
+Project root: H:/AIID_DTA_GPR
+
+A. IDENTIFICATION QUESTION
+--------------------------------------------------------------------------------------------------------
+The sample contains only observations with an active FTA in the previous year. The interaction therefore compares shallower and deeper active agreements rather than agreement and non-agreement observations.
+
+B. PAIR-CLUSTERED RESULTS
+--------------------------------------------------------------------------------------------------------
+fta_only_trade_ppml: beta=0.006145, effect=0.6164 percent, SE=0.007546, p=0.415424
+fta_only_survival_no_size: beta=-0.004410, effect=-0.4410 percentage_points, SE=0.000610, p=0.000000
+fta_only_survival_size_adjusted: beta=-0.004574, effect=-0.4574 percentage_points, SE=0.000610, p=0.000000
+
+C. PAIR + YEAR CLUSTERED RESULTS
+--------------------------------------------------------------------------------------------------------
+fta_only_trade_ppml: beta=0.006145, effect=0.6164 percent, SE=0.006849, p=0.369624
+fta_only_survival_no_size: beta=-0.004410, effect=-0.4410 percentage_points, SE=0.003096, p=0.174787
+fta_only_survival_size_adjusted: beta=-0.004574, effect=-0.4574 percentage_points, SE=0.003112, p=0.162256
+
+D. OUTPUT FILES
+--------------------------------------------------------------------------------------------------------
+outputs/audit/step15a_fta_only_depth_report.txt
+outputs/audit/step15a_fta_only_sample_audit.csv
+outputs/audit/step15a_fta_only_model_audit.csv
+outputs/tables/step15a_fta_only_depth_coefficients.csv
+
+E. NEXT ACTION
+--------------------------------------------------------------------------------------------------------
+Send the report, sample-audit CSV, model-audit CSV and coefficient CSV to ChatGPT.

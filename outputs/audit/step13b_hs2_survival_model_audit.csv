@@ -1,0 +1,6 @@
+model,input_rows,estimation_rows,removed_rows,elapsed_seconds
+fta_no_size,8219579,8045131,174448,4.91
+fta_size_adjusted,8219579,8045131,174448,6.17999999999999
+depth_no_size,8219579,8045131,174448,5.7
+depth_size_adjusted,8219579,8045131,174448,6.2
+joint_size_adjusted,8219579,8045131,174448,7.64

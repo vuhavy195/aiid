@@ -1,0 +1,3 @@
+﻿panel,rows,pair_hs2_groups,unordered_pair_clusters,years,minimum_year,maximum_year,zero_share,survival_rate,missing_shock_rows,full_panel_rows,retained_row_share
+trade_value,2520781,148332,946,17,2007,2023,0.20381778504360354,,0,16752461,0.15047227986383613
+link_survival,1885368,147691,946,16,2008,2023,,0.9412135986184129,0,8219579,0.229375251457526
